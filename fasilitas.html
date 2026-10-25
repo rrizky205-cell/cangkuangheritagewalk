@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas - Cangkuang Heritage Walk</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fasilitas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- =========================================================================
+       HEADER & NAVBAR
+       ========================================================================= -->
+  <header class="site-header scrolled" id="siteHeader">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo" aria-label="Beranda Candi Cangkuang">
+        <div class="brand-icon-wrapper">
+          <i class="fas fa-gopuram fa-lg"></i>
+        </div>
+        <div class="brand-text">
+          <h1>CANDI CANGKUANG</h1>
+          <span>HERITAGE WALK • GARUT</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navigasi Utama">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="eksklusif.html" class="nav-link">Eksklusif</a></li>
+          <li><a href="spot-wisata.html" class="nav-link">Spot Wisata</a></li>
+          <li><a href="fasilitas.html" class="nav-link active">Fasilitas</a></li>
+          <li><a href="sejarah.html" class="nav-link">Sejarah & Budaya</a></li>
+          <li><a href="virtual-tour.html" class="nav-link">Peta & Virtual Tour</a></li>
+          <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-ambience" id="btnAmbience" title="Putar Suasana Alami Situ Cangkuang" aria-label="Putar Suasana Alami">
+          <i class="fas fa-volume-up"></i>
+        </button>
+        <a href="tiket.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-ticket-alt"></i> Pesan Tiket
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       SUBPAGE HERO BANNER
+       ========================================================================= -->
+  <section class="subpage-hero" style="background-image: linear-gradient(135deg, rgba(28, 43, 36, 0.94) 0%, rgba(13, 22, 18, 0.98) 100%), url('https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=1920&q=80');" data-custom-folder="Menu Fasilitas (Background)">
+    <div class="container">
+      <div class="subpage-breadcrumb">
+        <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+        <span>/</span>
+        <span>Fasilitas</span>
+      </div>
+      <h1 class="subpage-title">Fasilitas Wisata Terpadu</h1>
+      <p class="subpage-desc">
+        Nikmati sarana dan prasarana lengkap yang kami sediakan untuk menunjang pengalaman liburan budaya dan alam yang aman, nyaman, dan berkesan di Situ Cangkuang.
+      </p>
+    </div>
+  </section>
+
+    <!-- Main Content: Facilities Grid -->
+    <main class="main-content">
+        <section class="section-container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Sarana & Prasarana</span>
+                <h2 class="section-title">Fasilitas di Cangkuang Heritage Walk</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Setiap fasilitas dirancang menyatu harmonis dengan kelestarian alam dan nilai-nilai adat cagar budaya.</p>
+            </div>
+
+            <div class="facilities-grid">
+                <!-- Fasilitas 1: Mushola -->
+                <article class="facility-card" data-facility="mushola">
+                    <div class="card-img-wrapper" data-custom-folder="Menu Fasilitas (Mushola)">
+                        <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=800&q=80" alt="Mushola As-Salam Situ Cangkuang" class="card-img" id="img-mushola">
+                        <span class="card-tag"><i class="fas fa-mosque"></i> Ibadah</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Mushola As-Salam Situ Cangkuang</h3>
+                        <p class="card-text">Tempat ibadah yang bersih, tenang, dan sejuk berlokasi dekat dermaga serta kawasan cagar budaya. Dilengkapi tempat wudhu terpisah dengan air pegunungan yang segar.</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check-circle"></i> Tempat wudhu pria & wanita terpisah</li>
+                            <li><i class="fas fa-check-circle"></i> Mukena, sarung, dan sajadah bersih</li>
+                            <li><i class="fas fa-check-circle"></i> Tempat penitipan sandal/sepatu aman</li>
+                        </ul>
+                        <button class="btn-detail" onclick="openFacilityModal('mushola')">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Fasilitas 2: Dermaga & Rakit Tradisional -->
+                <article class="facility-card" data-facility="dermaga">
+                    <div class="card-img-wrapper" data-custom-folder="Menu Fasilitas (Dermaga Rakit)">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80" alt="Dermaga & Rakit Tradisional" class="card-img" id="img-dermaga">
+                        <span class="card-tag"><i class="fas fa-ship"></i> Transportasi</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Dermaga & Rakit Tradisional (Getek)</h3>
+                        <p class="card-text">Pengalaman unik menyeberangi Situ Cangkuang menggunakan rakit bambu tradisional (getek). Didampingi pendayung berpengalaman dan dilengkapi rompi pelampung standar keselamatan.</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check-circle"></i> Puluhan unit rakit bambu kokoh</li>
+                            <li><i class="fas fa-check-circle"></i> Rompi pelampung (life jacket) lengkap</li>
+                            <li><i class="fas fa-check-circle"></i> Dermaga apung aman untuk lansia & anak</li>
+                        </ul>
+                        <button class="btn-detail" onclick="openFacilityModal('dermaga')">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Fasilitas 3: Gazebo & Saung Santai -->
+                <article class="facility-card" data-facility="gazebo">
+                    <div class="card-img-wrapper" data-custom-folder="Menu Fasilitas (Gazebo)">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Gazebo & Saung Santai" class="card-img" id="img-gazebo">
+                        <span class="card-tag"><i class="fas fa-umbrella-beach"></i> Rekreasi</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Gazebo & Saung Santai Parahyangan</h3>
+                        <p class="card-text">Saung-saung beratap ijuk dan bambu di sepanjang tepian danau. Sangat cocok untuk beristirahat bersama keluarga menikmati hembusan angin sejuk dan indahnya panorama Situ Cangkuang.</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check-circle"></i> Pemandangan 180° menghadap danau</li>
+                            <li><i class="fas fa-check-circle"></i> Area rindang di bawah pohon rindang</li>
+                            <li><i class="fas fa-check-circle"></i> Gratis digunakan oleh seluruh pengunjung</li>
+                        </ul>
+                        <button class="btn-detail" onclick="openFacilityModal('gazebo')">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Fasilitas 4: Sentra Kuliner Khas Sunda -->
+                <article class="facility-card" data-facility="kuliner">
+                    <div class="card-img-wrapper" data-custom-folder="Menu Fasilitas (Kuliner Garut)">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Sentra Kuliner Khas Sunda" class="card-img" id="img-kuliner">
+                        <span class="card-tag"><i class="fas fa-utensils"></i> Kuliner</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Sentra Kuliner Khas Sunda & Garut</h3>
+                        <p class="card-text">Pusat kuliner tradisional yang menyajikan hidangan otentik Parahyangan: Nasi Liwet kastrol, Ikan Bakar Danau, Sambal Terasi Dadak, Es Kelapa Muda, serta oleh-oleh Dodol Garut ternama.</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check-circle"></i> Masakan khas Sunda lezat & higienis</li>
+                            <li><i class="fas fa-check-circle"></i> Area makan lesehan tepi danau</li>
+                            <li><i class="fas fa-check-circle"></i> Pusat oleh-oleh khas Garut terlengkap</li>
+                        </ul>
+                        <button class="btn-detail" onclick="openFacilityModal('kuliner')">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Fasilitas 5: Toilet Bersih & Sanitasi -->
+                <article class="facility-card" data-facility="toilet">
+                    <div class="card-img-wrapper" data-custom-folder="Menu Fasilitas (Toilet Bersih)">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Toilet Bersih & Sanitasi" class="card-img" id="img-toilet">
+                        <span class="card-tag"><i class="fas fa-restroom"></i> Sanitasi</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Toilet Bersih & Sanitasi Higienis</h3>
+                        <p class="card-text">Toilet bersih dan terawat dengan sirkulasi udara baik yang dibersihkan secara terjadwal. Tersebar di area gerbang masuk, dermaga penyeberangan, dan kompleks candi.</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check-circle"></i> Air bersih mengalir terus-menerus</li>
+                            <li><i class="fas fa-check-circle"></i> Tersedia toilet duduk dan jongkok</li>
+                            <li><i class="fas fa-check-circle"></i> Wastafel, sabun cuci tangan, & cermin</li>
+                        </ul>
+                        <button class="btn-detail" onclick="openFacilityModal('toilet')">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Fasilitas 6: Area Parkir Luas -->
+                <article class="facility-card" data-facility="parkir">
+                    <div class="card-img-wrapper" data-custom-folder="Menu Fasilitas (Area Parkir)">
+                        <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=800&q=80" alt="Area Parkir Luas" class="card-img" id="img-parkir">
+                        <span class="card-tag"><i class="fas fa-parking"></i> Parkir</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Area Parkir Luas & Teratur</h3>
+                        <p class="card-text">Lahan parkir bertaraf aman dan beraspal rapi yang sanggup menampung bus pariwisata berukuran besar, minibus elf, mobil keluarga, dan ratusan kendaraan roda dua.</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check-circle"></i> Kapasitas bus pariwisata & mobil luas</li>
+                            <li><i class="fas fa-check-circle"></i> Penjagaan petugas keamanan berseragam</li>
+                            <li><i class="fas fa-check-circle"></i> Kamera CCTV pemantau 24 jam</li>
+                        </ul>
+                        <button class="btn-detail" onclick="openFacilityModal('parkir')">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Fasilitas 7: Pusat Informasi & Pemandu Wisata -->
+                <article class="facility-card" data-facility="informasi">
+                    <div class="card-img-wrapper" data-custom-folder="Menu Fasilitas (Pusat Informasi)">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Pusat Informasi & Tour Guide" class="card-img" id="img-informasi">
+                        <span class="card-tag"><i class="fas fa-info-circle"></i> Layanan</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Pusat Informasi & Pemandu Wisata</h3>
+                        <p class="card-text">Layanan informasi terpadu bagi wisatawan, penyediaan peta saku panduan wisata, pemesanan rombongan studi tour, serta pendampingan pemandu sejarah lokal berlisensi.</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check-circle"></i> Pemandu sejarah bersertifikat resmi</li>
+                            <li><i class="fas fa-check-circle"></i> Brosur & peta cagar budaya gratis</li>
+                            <li><i class="fas fa-check-circle"></i> Layanan pos pertolongan pertama (P3K)</li>
+                        </ul>
+                        <button class="btn-detail" onclick="openFacilityModal('informasi')">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+
+                <!-- Fasilitas 8: Souvenir & Kerajinan Bambu -->
+                <article class="facility-card" data-facility="souvenir">
+                    <div class="card-img-wrapper" data-custom-folder="Menu Fasilitas (Cinderamata)">
+                        <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80" alt="Cinderamata & Kerajinan Bambu" class="card-img" id="img-souvenir">
+                        <span class="card-tag"><i class="fas fa-gifts"></i> Souvenir</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Toko Cinderamata & Kerajinan Bambu</h3>
+                        <p class="card-text">Galeri kerajinan tangan hasil karya perajin lokal Kampung Pulo dan warga sekitar: miniatur rakit bambu, anyaman tradisional, kaos tematik Cangkuang, dan gantungan kunci ukir.</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-check-circle"></i> 100% kerajinan tangan buatan warga asli</li>
+                            <li><i class="fas fa-check-circle"></i> Miniatur rakit bambu khas Situ Cangkuang</li>
+                            <li><i class="fas fa-check-circle"></i> Harga ramah kantong & bersertifikat cagar</li>
+                        </ul>
+                        <button class="btn-detail" onclick="openFacilityModal('souvenir')">Lihat Detail <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Detail Fasilitas (Scrollable & Responsive) -->
+    <div class="modal-overlay" id="facilityModal" style="display: none;">
+        <div class="modal-content facility-modal-dialog">
+            <button class="modal-close" onclick="closeFacilityModal()" aria-label="Tutup Detail">&times;</button>
+            <div class="modal-header">
+                <span class="modal-category" id="modalCategory">Kategori</span>
+                <h2 class="modal-title" id="modalTitle">Judul Fasilitas</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-box">
+                    <img src="" alt="" id="modalImg" class="modal-cover-img">
+                </div>
+                <div class="modal-text-content">
+                    <h4>Deskripsi Lengkap</h4>
+                    <p id="modalDescription"></p>
+                    <h4 style="margin-top: 18px;">Keunggulan & Ketentuan Fasilitas</h4>
+                    <ul class="modal-list" id="modalList"></ul>
+                    <div class="modal-note-box">
+                        <i class="fas fa-info-circle"></i>
+                        <span id="modalNote">Seluruh pengunjung diimbau menjaga kebersihan dan kelestarian fasilitas bersama.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-modal-close" onclick="closeFacilityModal()">Tutup</button>
+                <a href="tiket.html" class="btn-modal-action">Pesan Tiket Wisata</a>
+            </div>
+        </div>
+    </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>CANDI CANGKUANG</h2>
+          <p class="footer-quote">
+            "Sampurasun! Wilujeng sumping di tanah leluhur Cangkuang. Menjaga jejak sejarah karuhun, merawat keselarasan alam Situ, dan melestarikan kearifan budaya tanah Sunda."
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Tautan Halaman</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-angle-right"></i> Beranda Utama</a></li>
+            <li><a href="eksklusif.html"><i class="fas fa-angle-right"></i> Eksklusif & Insights</a></li>
+            <li><a href="spot-wisata.html"><i class="fas fa-angle-right"></i> Spot Wisata Pilihan</a></li>
+            <li><a href="fasilitas.html"><i class="fas fa-angle-right"></i> Fasilitas Terpadu</a></li>
+            <li><a href="sejarah.html"><i class="fas fa-angle-right"></i> Linimasa Sejarah</a></li>
+            <li><a href="virtual-tour.html"><i class="fas fa-angle-right"></i> Peta & Virtual Tour</a></li>
+            <li><a href="galeri.html"><i class="fas fa-angle-right"></i> Galeri Multimedia</a></li>
+            <li><a href="tiket.html"><i class="fas fa-angle-right"></i> Tiket & Reservasi</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Jam Operasional</h3>
+          <div class="footer-contact-item">
+            <i class="far fa-clock"></i>
+            <div><strong>Setiap Hari:</strong><br>07.30 - 17.00 WIB</div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Kontak Resmi</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>Desa Cangkuang, Kec. Leles, Kabupaten Garut, Jawa Barat 44152</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Candi Cangkuang Heritage Walk. Dilindungi Hak Cipta Dinas Pariwisata & Kebudayaan Kabupaten Garut.</div>
+        <div>Halaman Fasilitas Wisata Terpadu</div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Tag Audio (Nuansa Sunda: Alunan Suling Merdu & Gemercik Air Alami) -->
+    <audio id="bgMusic" loop preload="none">
+        <source src="https://archive.org/download/suling-sunda/SULING%20SUNDA.mp3" type="audio/mpeg">
+        <source src="https://archive.org/download/degungsundanesemusicofwestjava/05%20-%20Ayun%20Ambing.mp3" type="audio/mpeg">
+        <source src="https://archive.org/download/degungsundanesemusicofwestjava/01%20-%20Sabilulungan.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Audio Toggle Button -->
+    <button id="musicToggleBtn" class="music-toggle-btn" aria-label="Putar Musik Latar Sunda" title="Putar Musik Latar Sunda">
+        <span class="music-icon" id="musicIcon">
+            <svg id="iconPlay" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+            <svg id="iconPause" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="display: none;">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+        </span>
+        <span class="music-text" id="musicText">Musik Latar</span>
+        <span class="music-waves" id="musicWaves" style="display: none;">
+            <span></span><span></span><span></span>
+        </span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom-images.js"></script>
+    <script src="assets/js/music-player.js"></script>
+    <script>
+        // Data Fasilitas untuk Modal
+        const facilitiesData = {
+            mushola: {
+                title: "Mushola As-Salam Situ Cangkuang",
+                category: "Sarana Ibadah",
+                desc: "Mushola As-Salam merupakan sarana ibadah resmi yang berada di kawasan wisata Situ Cangkuang. Dirancang dengan nuansa kayu tradisional yang adem, mushola ini memiliki kapasitas hingga 40 jamaah dengan sirkulasi udara terbuka yang sejuk langsung menghadap perairan Situ Cangkuang.",
+                features: [
+                    "Tempat wudhu terpisah dengan pancuran air pegunungan alami yang dingin dan bersih.",
+                    "Perlengkapan sholat lengkap (mukena, sarung, sajadah) yang dicuci secara berkala setiap hari.",
+                    "Rak penitipan sepatu dan sandal yang tertata rapi.",
+                    "Terbuka setiap saat mengikuti jadwal sholat lima waktu."
+                ],
+                note: "Mohon menjaga kesucian dan kebersihan area mushola bersama-sama."
+            },
+            dermaga: {
+                title: "Dermaga & Rakit Tradisional (Getek)",
+                category: "Transportasi Air Cagar Budaya",
+                desc: "Rakit bambu (dikenal warga lokal sebagai 'Getek') adalah transportasi air legendaris yang mengantarkan wisatawan dari gerbang daratan utama menyeberangi Situ Cangkuang menuju pulau tempat berdirinya Candi Cangkuang dan pemukiman adat Kampung Pulo.",
+                features: [
+                    "Dibuat dari susunan bambu gombong pilihan yang kuat, fleksibel, dan memiliki daya apung tinggi.",
+                    "Setiap rakit dilengkapi deretan rompi pelampung (life jacket) berstandar keselamatan untuk anak-anak dan dewasa.",
+                    "Didayung oleh juru getek berpengalaman dari masyarakat lokal yang mahir membaca arus danau.",
+                    "Dermaga apung kayu yang stabil memudahkan anak-anak dan lansia naik turun rakit."
+                ],
+                note: "Wajib mengenakan rompi keselamatan selama berada di atas rakit bambu demi kenyamanan."
+            },
+            gazebo: {
+                title: "Gazebo & Saung Santai Parahyangan",
+                category: "Area Rekreasi & Istirahat",
+                desc: "Area gazebo berbentuk saung tradisional beratap ijuk tersebar di tepian danau dan taman rindang kompleks cagar budaya. Didesain sebagai tempat santai favorit bagi keluarga yang ingin menikmati semilir angin segar Situ Cangkuang.",
+                features: [
+                    "Terlindung dari terik matahari dan hujan berkat konstruksi atap ijuk alami yang sejuk.",
+                    "Menghadap panorama danau, pegunungan Garut, dan lalu lintas perahu getek yang menawan.",
+                    "Dilengkapi tempat sampah terpilah di samping setiap gazebo untuk menjaga kebersihan.",
+                    "Dapat dinikmati secara cuma-cuma (gratis) oleh seluruh pengunjung yang memegang tiket resmi."
+                ],
+                note: "Dilarang membuang sisa makanan atau sampah ke perairan danau."
+            },
+            kuliner: {
+                title: "Sentra Kuliner Khas Sunda & Garut",
+                category: "Wisata Kuliner Lokal",
+                desc: "Kawasan sentra kuliner Situ Cangkuang menghadirkan deretan hidangan otentik khas Priangan Timur yang dimasak menggunakan resep turun-temurun warga lokal Leles, Garut.",
+                features: [
+                    "Nasi Liwet khas kastrol dengan aroma daun salam, serai, dan taburan teri gurih.",
+                    "Ikan bakar nila dan mas segar hasil budidaya perairan tawar dengan bumbu kecap pedas.",
+                    "Es Kelapa Muda murni yang disajikan langsung dari batok kelapa segar.",
+                    "Kios resmi oleh-oleh khas: Dodol Garut aneka rasa, Chocodot, Kerupuk Kulit Dorokdok, dan Kopi Garut."
+                ],
+                note: "Tersedia pilihan metode pembayaran tunai maupun nontunai (QRIS)."
+            },
+            toilet: {
+                title: "Toilet Bersih & Fasilitas Sanitasi",
+                category: "Fasilitas Kebersihan",
+                desc: "Kenyamanan wisatawan adalah prioritas kami. Fasilitas toilet di Cangkuang Heritage Walk selalu dirawat secara terjadwal dengan standar kebersihan cagar budaya internasional.",
+                features: [
+                    "Penyediaan air bersih yang melimpah dari mata air pegunungan Leles.",
+                    "Tersedia bilik toilet duduk khusus untuk kemudahan lansia dan penyandang disabilitas.",
+                    "Dilengkapi wastafel keramik, sabun antiseptik cair, dan pengering tangan/tisu.",
+                    "Petugas kebersihan siaga yang membersihkan fasilitas setiap 1 jam sekali."
+                ],
+                note: "Gunakan fasilitas dengan bijak dan buang sampah sanitasi pada tempat yang tersedia."
+            },
+            parkir: {
+                title: "Area Parkir Luas & Terpadu",
+                category: "Aksesibilitas & Parkir",
+                desc: "Kawasan parkir terpadu Cangkuang Heritage Walk dirancang untuk mempermudah kedatangan rombongan bus besar maupun wisatawan kendaraan pribadi.",
+                features: [
+                    "Kapasitas mampu menampung hingga 30 bus pariwisata berukuran besar secara simultan.",
+                    "Area tersendiri untuk lebih dari 150 unit mobil pribadi dan 500 sepeda motor.",
+                    "Sistem kartu parkir yang tertib dengan penjagaan petugas linmas dan pengelola.",
+                    "Penerangan lampu sorot LED yang terang dan pengawasan kamera keamanan CCTV."
+                ],
+                note: "Pastikan kendaraan Anda terkunci rapat dan simpan tiket parkir dengan baik."
+            },
+            informasi: {
+                title: "Pusat Informasi & Pemandu Wisata",
+                category: "Pusat Informasi & Edukasi",
+                desc: "Pusat Informasi Cangkuang Heritage Walk melayani seluruh kebutuhan orientasi wisatawan, reservasi pemandu budaya, informasi riset sejarah, serta penanganan keluhan dan bantuan darurat.",
+                features: [
+                    "Pemandu wisata (guide) resmi bersertifikat HPI yang fasih menjelaskan sejarah Candi Cangkuang dan makam Embah Dalem Arif Muhammad.",
+                    "Peta saku kawasan wisata dan leaflet edukasi cagar budaya dibagikan secara gratis.",
+                    "Pos Pertolongan Pertama Pada Kecelakaan (P3K) dengan obat-obatan standar medis.",
+                    "Layanan informasi barang hilang dan penemuan barang (Lost and Found)."
+                ],
+                note: "Untuk pemesanan pemandu khusus rombongan sekolah/instansi dapat melapor ke petugas jaga."
+            },
+            souvenir: {
+                title: "Toko Cinderamata & Kerajinan Bambu",
+                category: "Pusat Kerajinan Rakyat",
+                desc: "Pusat kerajinan cinderamata ini merupakan wadah pemberdayaan ekonomi kreatif bagi masyarakat asli Kampung Pulo dan sekitarnya.",
+                features: [
+                    "Miniatur getek rakit bambu buatan tangan yang presisi dan unik sebagai kenang-kenangan.",
+                    "Batik motif Cangkuang dan tenun khas Garutan dengan pewarna alami.",
+                    "Anyaman bambu fungsional seperti bakul, caping, dan hiasan dinding estetik.",
+                    "Cinderamata gantungan kunci ukir dan kaos wisata eksklusif Cangkuang."
+                ],
+                note: "Membeli produk lokal secara langsung mendukung kelestarian masyarakat adat Kampung Pulo."
+            }
+        };
+
+        function openFacilityModal(key) {
+            const data = facilitiesData[key];
+            if (!data) return;
+
+            document.getElementById('modalCategory').textContent = data.category;
+            document.getElementById('modalTitle').textContent = data.title;
+
+            // Dynamically grab current image from the facility card (preserves custom user image!)
+            const cardEl = document.querySelector(`[data-facility="${key}"]`);
+            const cardImg = cardEl ? cardEl.querySelector('img') : null;
+            const currentImgSrc = cardImg ? cardImg.src : '';
+            const modalImg = document.getElementById('modalImg');
+            if (modalImg) {
+                modalImg.src = currentImgSrc;
+                modalImg.alt = data.title;
+            }
+
+            document.getElementById('modalDescription').textContent = data.desc;
+            document.getElementById('modalNote').textContent = data.note;
+
+            const listElem = document.getElementById('modalList');
+            listElem.innerHTML = '';
+            data.features.forEach(feat => {
+                const li = document.createElement('li');
+                li.innerHTML = '<i class="fas fa-check-circle"></i> ' + feat;
+                listElem.appendChild(li);
+            });
+
+            const modal = document.getElementById('facilityModal');
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeFacilityModal() {
+            const modal = document.getElementById('facilityModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        // Close on outside click or Escape key
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('facilityModal');
+            if (e.target === modal) {
+                closeFacilityModal();
+            }
+        });
+
+        window.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeFacilityModal();
+            }
+        });
+    </script>
+</body>
+</html>

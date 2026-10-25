@@ -1,0 +1,99 @@
+# ==============================================================================
+# CANDI CANGKUANG HERITAGE WALK - LOCALHOST WEBSERVER (POWERSHELL NATIVE)
+# No external runtime (Python/Node.js) required! Uses Windows System.Net.HttpListener.
+# ==============================================================================
+
+$port = 8080
+$prefix = "http://localhost:$port/"
+$baseDir = $PSScriptRoot
+if (-not $baseDir) { $baseDir = Get-Location }
+
+Write-Host "==========================================================" -ForegroundColor DarkYellow
+Write-Host " 🏛️ CANDI CANGKUANG HERITAGE WALK - LOCALHOST SERVER" -ForegroundColor Yellow
+Write-Host "==========================================================" -ForegroundColor DarkYellow
+Write-Host " Direktori Web : $baseDir" -ForegroundColor Cyan
+Write-Host " Alamat Server : $prefix" -ForegroundColor Green
+Write-Host " Tekan CTRL+C di jendela ini untuk mematikan server." -ForegroundColor Gray
+Write-Host "==========================================================" -ForegroundColor DarkYellow
+
+# Create HttpListener
+$listener = New-Object System.Net.HttpListener
+$listener.Prefixes.Add($prefix)
+
+try {
+    $listener.Start()
+} catch {
+    Write-Host "[ERROR] Gagal menjalankan server pada port $port. Kemungkinan port sedang digunakan." -ForegroundColor Red
+    Write-Host $_.Exception.Message -ForegroundColor Red
+    Exit 1
+}
+
+# Auto-open browser
+Start-Process $prefix
+
+# MIME types dictionary
+$mimeTypes = @{
+    ".html" = "text/html; charset=utf-8"
+    ".htm"  = "text/html; charset=utf-8"
+    ".css"  = "text/css; charset=utf-8"
+    ".js"   = "application/javascript; charset=utf-8"
+    ".json" = "application/json; charset=utf-8"
+    ".png"  = "image/png"
+    ".jpg"  = "image/jpeg"
+    ".jpeg" = "image/jpeg"
+    ".gif"  = "image/gif"
+    ".svg"  = "image/svg+xml"
+    ".ico"  = "image/x-icon"
+    ".webp" = "image/webp"
+    ".woff" = "font/woff"
+    ".woff2"= "font/woff2"
+    ".ttf"  = "font/ttf"
+    ".md"   = "text/markdown; charset=utf-8"
+}
+
+try {
+    while ($listener.IsListening) {
+        $context = $listener.GetContext()
+        $request = $context.Request
+        $response = $context.Response
+
+        $rawUrl = $request.RawUrl.Split('?')[0].TrimStart('/')
+        if ([string]::IsNullOrWhiteSpace($rawUrl)) {
+            $rawUrl = "index.html"
+        }
+
+        # Prevent directory traversal
+        $rawUrl = $rawUrl.Replace('/', '\')
+        $filePath = Join-Path $baseDir $rawUrl
+
+        $timeStamp = (Get-Date).ToString("HH:mm:ss")
+
+        if (Test-Path $filePath -PathType Leaf) {
+            $ext = [System.IO.Path]::GetExtension($filePath).ToLower()
+            $mime = if ($mimeTypes.ContainsKey($ext)) { $mimeTypes[$ext] } else { "application/octet-stream" }
+
+            $bytes = [System.IO.File]::ReadAllBytes($filePath)
+            $response.ContentType = $mime
+            $response.ContentLength64 = $bytes.Length
+            $response.StatusCode = 200
+
+            $response.OutputStream.Write($bytes, 0, $bytes.Length)
+            Write-Host "[$timeStamp] 200 OK  : /$rawUrl ($mime)" -ForegroundColor Green
+        } else {
+            $notFoundMsg = "<html><body style='font-family:sans-serif;padding:40px;text-align:center;'><h2>404 - Halaman Tidak Ditemukan</h2><p>Berkas '$rawUrl' tidak ada di direktori website Candi Cangkuang.</p><a href='/'>Kembali ke Beranda</a></body></html>"
+            $bytes = [System.Text.Encoding]::UTF8.GetBytes($notFoundMsg)
+            $response.ContentType = "text/html; charset=utf-8"
+            $response.ContentLength64 = $bytes.Length
+            $response.StatusCode = 404
+
+            $response.OutputStream.Write($bytes, 0, $bytes.Length)
+            Write-Host "[$timeStamp] 404 NOT : /$rawUrl" -ForegroundColor Red
+        }
+
+        $response.OutputStream.Close()
+    }
+} finally {
+    $listener.Stop()
+    $listener.Close()
+    Write-Host "`nServer Candi Cangkuang telah dimatikan." -ForegroundColor Yellow
+}
