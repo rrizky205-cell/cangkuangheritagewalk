@@ -1,0 +1,14 @@
+﻿PANDUAN MENGUBAH FOTO DI WEBSITE (CANGKUANG HERITAGE WALK)
+=========================================================
+Folder: Menu Fasilitas (Toilet Bersih)
+
+CARA PENGGUNAAN:
+1. Masukkan foto asli Anda ke dalam folder ini.
+2. Anda bisa menggunakan file foto dengan nama dan format apa saja:
+   - foto.jpg, foto.png, foto.webp
+   - bg.jpg, custom.jpg, 1.jpg
+   - nama file kamera langsung (misal: DSC001.JPG, foto_cangkuang.jpg, dll.)
+3. Buka atau refresh halaman website Anda di browser (http://localhost:8080/).
+4. Gambar pada website akan otomatis berganti dengan foto asli Anda!
+5. Jika folder ini kosong, website akan menggunakan foto default alam yang natural.
+=========================================================

@@ -62,7 +62,7 @@ while ($listener.IsListening) {
         }
 
         # API: Kustomisasi Gambar Otomatis
-        if ($rawPath -eq "/api/custom-images") {
+        if ($rawPath -eq "/api/custom-images" -or $rawPath -eq "/api/custom-images.json") {
             $mapping = @{}
             $imageExts = @('.jpg', '.jpeg', '.png', '.webp', '.gif', '.svg')
             $menuFolders = Get-ChildItem -Path $baseDir -Directory -Filter "Menu *" -ErrorAction SilentlyContinue
