@@ -52,7 +52,7 @@
           <i class="fas fa-volume-up"></i>
         </button>
         <a href="tiket.html" class="btn btn-primary btn-sm">
-          <i class="fas fa-ticket-alt"></i> Pesan Tiket
+          <i class="fas fa-ticket-alt"></i> <span>Pesan Tiket</span>
         </a>
         <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi">
           <i class="fas fa-bars"></i>
@@ -62,147 +62,187 @@
   </header>
 
   <!-- =========================================================================
-       SUBPAGE HERO BANNER
+       MAIN CONTENT: EKSKLUSIF & 3D FLIP SECRET CARDS
        ========================================================================= -->
-  <section class="subpage-hero" data-custom-folder="Menu Beranda (Background)">
-    <div class="container">
-      <div class="subpage-breadcrumb">
-        <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
-        <span>/</span>
-        <span>Eksklusif & Hidden Insights</span>
+  <main id="mainContent" class="page-main">
+
+    <!-- SUBPAGE HERO -->
+    <section class="py-section" style="padding-top: calc(var(--header-height) + 40px); padding-bottom: 40px; text-align: center; background: radial-gradient(circle at center, rgba(30, 53, 47, 0.4) 0%, var(--bg-andesite) 100%);">
+      <div class="container">
+        <span class="section-badge"><i class="fas fa-sparkles"></i> Eksklusif & Hidden Insights</span>
+        <h1 class="section-title">Rahasia Peradaban Kuno Candi Cangkuang</h1>
+        <div class="sunda-ornament-divider">
+          <i class="fas fa-gem sunda-ornament-icon"></i>
+        </div>
+        <p class="section-desc">
+          Mengungkap temuan arkeologi langka abad ke-8, rahasia pembuatan kertas naskah kuno pohon Saeh abad ke-17, serta 4 hukum adat sakral Kampung Pulo yang tidak tertulis di buku wisata umum.
+        </p>
       </div>
-      <h1 class="subpage-title">Eksklusif & Hidden Insights</h1>
-      <p class="subpage-desc">
-        Mengupas tabir rahasia sejarah peradaban masa lampau, naskah kuno daun Saeh abad ke-17, misteri arca Batara Guru, serta hukum adat leluhur Kampung Pulo yang pantang dilanggar.
-      </p>
+    </section>
+
+    <!-- 3D TILT & FLIP SECRET CARDS SECTION -->
+    <section class="py-section" style="padding-top: 0;">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 24px;">
+          <p style="font-size: 0.85rem; color: var(--gold-candi); text-transform: uppercase; letter-spacing: 1.5px;">
+            <i class="fas fa-sync-alt"></i> Klik atau Arahkan Kursor pada Kartu untuk Membuka Rahasia Sejarah (3D Flip)
+          </p>
+        </div>
+
+        <div class="cards-3d-grid">
+          <!-- CARD 1: ARCA BATARA GURU -->
+          <div class="card-3d-wrap">
+            <div class="card-3d-inner">
+              <!-- Front Side -->
+              <div class="card-3d-front">
+                <div>
+                  <div class="card-3d-icon"><i class="fas fa-monument"></i></div>
+                  <span class="section-badge" style="font-size: 0.7rem; padding: 4px 10px;">Arkeologi Abad VIII</span>
+                  <h3 class="card-3d-title">Misteri Arca Siwa Batara Guru</h3>
+                  <p class="card-3d-desc">
+                    Di dalam bilik utama candi terdapat arca Siwa setinggi 62 cm bertengger di atas padmasana. Mengapa candi bercorak Hindu Siwa ini berdiri megah di pedalaman Pasundan Jawa Barat?
+                  </p>
+                </div>
+                <div>
+                  <button class="card-flip-btn">
+                    <i class="fas fa-undo-alt"></i> Balik Kartu: Buka Rahasia
+                  </button>
+                </div>
+              </div>
+
+              <!-- Back Side -->
+              <div class="card-3d-back">
+                <div>
+                  <span class="section-badge" style="font-size: 0.7rem; padding: 4px 10px;">Catatan Peneliti 1966</span>
+                  <h3 class="card-3d-title" style="color: var(--gold-light);">Rahasia Garbhagriha & Arca</h3>
+                  <p style="font-size: 0.84rem; color: var(--text-lontar-muted); line-height: 1.6; margin-bottom: 12px;">
+                    1. <strong>Identifikasi Arca:</strong> Memiliki 4 tangan dengan atribut trisula, aksamala (tasbih), dan kamandalu. Posisi menghadap fajar timur melambangkan pemujaan matahari dan Siwa Mahadewa.
+                  </p>
+                  <p style="font-size: 0.84rem; color: var(--text-lontar-muted); line-height: 1.6;">
+                    2. <strong>Keunikan Pasundan:</strong> Ini adalah candi Hindu tertua dan satu-satunya di Tatar Sunda, membuktikan adanya jalur ziarah kerajaan Sunda kuno sebelum masa Pajajaran.
+                  </p>
+                </div>
+                <div style="margin-top: 14px;">
+                  <button class="card-flip-btn" style="background: rgba(0,0,0,0.4); border-color: var(--gold-candi);">
+                    <i class="fas fa-redo-alt"></i> Putar Kembali
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: NASKAH KULIT POHON SAEH -->
+          <div class="card-3d-wrap">
+            <div class="card-3d-inner">
+              <!-- Front Side -->
+              <div class="card-3d-front">
+                <div>
+                  <div class="card-3d-icon"><i class="fas fa-scroll"></i></div>
+                  <span class="section-badge" style="font-size: 0.7rem; padding: 4px 10px;">Manuskrip Abad XVII</span>
+                  <h3 class="card-3d-title">Naskah Kuno Kulit Pohon Saeh</h3>
+                  <p class="card-3d-desc">
+                    Museum Candi Cangkuang menyimpan lembaran Al-Qur'an dan naskah khutbah Idul Fitri kuno berbahasa Sunda-Arab berhuruf Pegon yang ditulis di atas serat kayu pohon Saeh.
+                  </p>
+                </div>
+                <div>
+                  <button class="card-flip-btn">
+                    <i class="fas fa-undo-alt"></i> Balik Kartu: Buka Rahasia
+                  </button>
+                </div>
+              </div>
+
+              <!-- Back Side -->
+              <div class="card-3d-back">
+                <div>
+                  <span class="section-badge" style="font-size: 0.7rem; padding: 4px 10px;">Teknologi Kertas Kuno</span>
+                  <h3 class="card-3d-title" style="color: var(--gold-light);">Rahasia Ketahanan 400 Tahun</h3>
+                  <p style="font-size: 0.84rem; color: var(--text-lontar-muted); line-height: 1.6; margin-bottom: 12px;">
+                    1. <strong>Pohon Saeh:</strong> Diolah dari kulit kayu <em>Broussonetia papyrifera</em> yang ditempa hingga seratnya menyatu rapat. Getah alaminya mengandung zat penolak rayap dan jamur tropis.
+                  </p>
+                  <p style="font-size: 0.84rem; color: var(--text-lontar-muted); line-height: 1.6;">
+                    2. <strong>Tinta Karbon Organik:</strong> Tinta dibuat dari jelaga minyak kemiri campur getah damar, sehingga tulisan tangan Embah Dalem Arif Muhammad tetap pekat hingga kini.
+                  </p>
+                </div>
+                <div style="margin-top: 14px;">
+                  <button class="card-flip-btn" style="background: rgba(0,0,0,0.4); border-color: var(--gold-candi);">
+                    <i class="fas fa-redo-alt"></i> Putar Kembali
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: 4 PANTANGAN ADAT KAMPUNG PULO -->
+          <div class="card-3d-wrap">
+            <div class="card-3d-inner">
+              <!-- Front Side -->
+              <div class="card-3d-front">
+                <div>
+                  <div class="card-3d-icon"><i class="fas fa-shield-alt"></i></div>
+                  <span class="section-badge" style="font-size: 0.7rem; padding: 4px 10px;">Hukum Karuhun</span>
+                  <h3 class="card-3d-title">4 Pantangan Abadi (Pamali Adat)</h3>
+                  <p class="card-3d-desc">
+                    Masyarakat adat Kampung Pulo terikat pada 4 aturan adat leluhur yang pantang dilanggar selama ratusan tahun demi menjaga kesucian pulau dan harmoni kosmik.
+                  </p>
+                </div>
+                <div>
+                  <button class="card-flip-btn">
+                    <i class="fas fa-undo-alt"></i> Balik Kartu: Buka Rahasia
+                  </button>
+                </div>
+              </div>
+
+              <!-- Back Side -->
+              <div class="card-3d-back">
+                <div>
+                  <span class="section-badge" style="font-size: 0.7rem; padding: 4px 10px;">Aturan Turun-Temurun</span>
+                  <h3 class="card-3d-title" style="color: var(--gold-light);">Rincian 4 Pamali Adat</h3>
+                  <ul style="font-size: 0.82rem; color: var(--text-lontar-muted); line-height: 1.5; padding-left: 18px; margin-bottom: 10px;">
+                    <li><strong>1. Pantangan Menambah Rumah:</strong> Jumlah tetap 6 rumah dan 1 tajug, tidak boleh bertambah atau berkurang.</li>
+                    <li><strong>2. Pantangan Atap Jumeneng:</strong> Atap wajib pelana datar (suhunan jolopong/panjang).</li>
+                    <li><strong>3. Pantangan Ternak Besar:</strong> Dilarang memelihara kerbau/kambing/sapi demi kebersihan tanah suci pulau.</li>
+                    <li><strong>4. Larangan Gong Perunggu:</strong> Menghormati tradisi ziarah sakral para leluhur.</li>
+                  </ul>
+                </div>
+                <div>
+                  <button class="card-flip-btn" style="background: rgba(0,0,0,0.4); border-color: var(--gold-candi);">
+                    <i class="fas fa-redo-alt"></i> Putar Kembali
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER (WAVE) -->
+    <div class="wave-divider">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z" fill="#142521"></path>
+      </svg>
     </div>
-  </section>
 
-  <!-- =========================================================================
-       MAIN CONTENT: EKSKLUSIF & HIDDEN INSIGHTS
-       ========================================================================= -->
-  <main class="py-section">
-    <div class="container">
-
-      <!-- INSIGHT 1: MISTERI NASKAH KUNO & ARCA BATARA GURU -->
-      <article class="feature-split" style="margin-bottom: 80px;">
-        <div class="feature-split-img">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Cangkuang_2.jpg" alt="Arca Siwa dan Candi Cangkuang" loading="lazy">
-        </div>
-        <div class="feature-split-content">
-          <span class="section-badge badge-accent">
-            <i class="fas fa-scroll"></i> Arkeologi & Manuskrip Saeh
-          </span>
-          <h2 class="section-title">Misteri Naskah Kuno & Arca Batara Guru</h2>
-          <p style="color:var(--text-muted); line-height:1.7;">
-            Di dalam bilik utama (<em>garbhagriha</em>) Candi Cangkuang, para arkeolog menemukan sebuah arca Dewa Siwa setinggi 62 cm yang bertengger di atas lapik teratai (*padmasana*). Arca ini digambarkan bertangan empat dengan atribut khas Batara Guru: trisula, tasbih (<em>aksamala</em>), dan kendi amerta.
-          </p>
-          <div class="culture-quote-box">
-            "Penemuan naskah khutbah Idul Fitri dan Al-Qur'an berbahan serat kulit pohon Saeh (Broussonetia papyrifera) abad ke-17 membuktikan adanya kesinambungan peradaban yang berakulturasi secara damai di pulau ini."
-          </div>
-          <ul class="insight-list" style="margin-top:10px;">
-            <li><strong>Arca Siwa Mahadewa:</strong> Posisi menghadap ke timur menyambut fajar menyiratkan fungsi suci pemujaan matahari dan Siwa sebagai dewa tertinggi.</li>
-            <li><strong>Kulit Kayu Saeh:</strong> Teknik pembuatan kertas tradisional Sunda kuno dari getah dan serat pohon Saeh yang tahan rayap selama ratusan tahun.</li>
-            <li><strong>Tulisan Tangan Pegon:</strong> Ditulis langsung oleh Embah Dalem Arif Muhammad menggunakan tinta getah alami.</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- INSIGHT 2: FILOSOFI KAMPUNG ADAT PULO -->
-      <article class="feature-split" style="margin-bottom: 80px;">
-        <div class="feature-split-content" style="order: 2;">
-          <span class="section-badge">
-            <i class="fas fa-home"></i> Falsafah Sakral Leluhur
-          </span>
-          <h2 class="section-title">Filosofi Sakral Kampung Adat Pulo</h2>
-          <p style="color:var(--text-muted); line-height:1.7;">
-            Tepat di samping pelataran candi berdiri Kampung Adat Pulo. Masyarakat adat di sini mematuhi hukum karuhun yang telah dipertahankan secara turun-temurun sejak abad ke-17.
-          </p>
-          <ul class="insight-list">
-            <li><strong>Struktur Enam Rumah Tetap:</strong> Hanya ada 6 unit rumah adat (3 menghadap ke utara, 3 ke selatan) dan 1 masjid kecil. Jumlah ini melambangkan 6 putri dan 1 putra dari Embah Dalem Arif Muhammad.</li>
-            <li><strong>Hukum Waris Matrilineal:</strong> Rumah adat hanya boleh diwariskan kepada anak perempuan sulung. Jika seorang anak laki-laki menikah, ia wajib meninggalkan pulau untuk membangun rumah tangganya di luar.</li>
-            <li><strong>Pantangan Hewan Ternak Besar:</strong> Dilarang keras memelihara kerbau, sapi, atau kambing guna menjaga kesucian dan kebersihan tanah pulau cagar budaya.</li>
-            <li><strong>Larangan Memukul Gong Perunggu:</strong> Sebagai bentuk penghormatan sakral terhadap para leluhur dan menjaga ketenangan pulau ritual.</li>
-          </ul>
-        </div>
-        <div class="feature-split-img" style="order: 1;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Galeri_Budaya_Nusantara_-_Rumah_Adat_Sunda.jpg" alt="Rumah Adat Kampung Pulo" loading="lazy">
-        </div>
-      </article>
-
-      <!-- INSIGHT 3: INTERACTIVE TRIVIA / HIDDEN FACTS CARD -->
-      <div style="background:var(--bg-card); border:1px solid var(--border-light); border-radius:var(--radius-lg); padding:48px 36px; box-shadow:var(--shadow-md);">
-        <div class="text-center" style="margin-bottom:36px;">
-          <span class="section-badge badge-accent">
-            <i class="fas fa-lightbulb"></i> Interaktif Trivia
-          </span>
-          <h2 class="section-title">Fakta Sejarah Langka yang Jarang Diketahui</h2>
-          <p class="section-desc">
-            Klik setiap pertanyaan interaktif di bawah ini untuk membuka rahasia sejarah unik di balik Candi Cangkuang:
-          </p>
-        </div>
-
-        <div class="trivia-container" style="max-width:840px; margin:0 auto;">
-          <!-- Trivia 1 -->
-          <div class="trivia-item active">
-            <div class="trivia-header">
-              <span>1. Dari Mana Asal Mula Nama "Cangkuang"?</span>
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="trivia-content">
-              Nama "Cangkuang" berasal dari nama pohon pandan hutan langka berduri, yaitu <strong>Pohon Cangkuang</strong> (<em>Pandanus furcatus</em>), yang dahulu tumbuh lebat mengelilingi perairan Situ dan pulau ini. Daun pohon cangkuang zaman dahulu dimanfaatkan oleh penduduk setempat untuk membuat tudung saji, tikar, dan anyaman tradisional.
-            </div>
-          </div>
-
-          <!-- Trivia 2 -->
-          <div class="trivia-item">
-            <div class="trivia-header">
-              <span>2. Mengapa Candi Hindu Berdampingan dengan Tokoh Muslim?</span>
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="trivia-content">
-              Ini adalah salah satu bukti akulturasi budaya paling damai di Indonesia. Pada abad ke-17, Embah Dalem Arif Muhammad (tokoh Mataram) menyebarkan Islam di wilayah ini dengan pendekatan santun dan penuh toleransi tanpa menghancurkan peninggalan candi Hindu peninggalan leluhur Sunda. Makamnya berada hanya berjarak 3 meter dari dinding candi.
-            </div>
-          </div>
-
-          <!-- Trivia 3 -->
-          <div class="trivia-item">
-            <div class="trivia-header">
-              <span>3. Mengapa Transportasi Menuju Candi Tetap Menggunakan Rakit Bambu?</span>
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="trivia-content">
-              Perahu bermesin sengaja dilarang beroperasi di Situ Cangkuang demi mempertahankan ekosistem perairan alami seluas 25 hektar dari pencemaran minyak dan suara bising, sekaligus melestarikan tradisi menyeberang getek bambu khas pedesaan Priangan yang telah berusia berabad-abad.
-            </div>
-          </div>
-
-          <!-- Trivia 4 -->
-          <div class="trivia-item">
-            <div class="trivia-header">
-              <span>4. Mengapa Hanya 6 Kepala Keluarga yang Boleh Mendiami Kampung Pulo?</span>
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="trivia-content">
-              Aturan ini dibuat oleh para tetua adat agar pulau tidak mengalami kepadatan penduduk, menjaga kemurnian garis trah keturunan, serta memastikan sumber daya alam di pulau kecil tersebut tetap seimbang dan lestari sepanjang zaman.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Quick Navigation Call to Action -->
-      <div style="margin-top: 60px; text-align: center;">
-        <h3 style="font-family:var(--font-heading); color:var(--secondary); font-size:1.5rem; margin-bottom:16px;">Tertarik Menyaksikan Langsung Warisan Bersejarah Ini?</h3>
-        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
-          <a href="spot-wisata.html" class="btn btn-primary">
-            <i class="fas fa-map-marked-alt"></i> Jelajahi Spot Wisata
+    <!-- CALL TO ACTION -->
+    <section class="py-section" style="text-align: center;">
+      <div class="container">
+        <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-lontar); margin-bottom: 16px;">
+          Ingin Melihat Langsung Peninggalan Bersejarah Ini?
+        </h3>
+        <p style="color: var(--text-lontar-muted); max-width: 600px; margin: 0 auto 24px auto;">
+          Rasakan pengalaman menyeberang Situ Cangkuang dengan rakit bambu getek dan telusuri jejak peradaban luhur Pasundan.
+        </p>
+        <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+          <a href="tiket.html" class="btn btn-primary">
+            <i class="fas fa-ticket-alt"></i> Pesan Tiket Masuk & Rakit
           </a>
-          <a href="virtual-tour.html" class="btn btn-accent">
-            <i class="fas fa-vr-cardboard"></i> Coba Tur Virtual 360°
+          <a href="virtual-tour.html" class="btn btn-secondary">
+            <i class="fas fa-vr-cardboard"></i> Coba Virtual Tour Studio
           </a>
         </div>
       </div>
+    </section>
 
-    </div>
   </main>
 
   <!-- =========================================================================
@@ -213,52 +253,38 @@
       <div class="footer-top">
         <div class="footer-brand">
           <h2>CANDI CANGKUANG</h2>
-          <p class="footer-quote">
+          <p>
             "Sampurasun! Wilujeng sumping di tanah leluhur Cangkuang. Menjaga jejak sejarah karuhun, merawat keselarasan alam Situ, dan melestarikan kearifan budaya tanah Sunda."
           </p>
-          <div class="footer-socials">
-            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-          </div>
         </div>
 
         <div class="footer-col">
-          <h3>Tautan Halaman</h3>
+          <h4>Menu Website</h4>
           <ul class="footer-links">
-            <li><a href="index.html"><i class="fas fa-angle-right"></i> Beranda Utama</a></li>
-            <li><a href="eksklusif.html"><i class="fas fa-angle-right"></i> Eksklusif & Insights</a></li>
-            <li><a href="spot-wisata.html"><i class="fas fa-angle-right"></i> Spot Wisata Pilihan</a></li>
-            <li><a href="fasilitas.html"><i class="fas fa-angle-right"></i> Fasilitas Terpadu</a></li>
-            <li><a href="sejarah.html"><i class="fas fa-angle-right"></i> Linimasa Sejarah</a></li>
-            <li><a href="virtual-tour.html"><i class="fas fa-angle-right"></i> Virtual Tour 360°</a></li>
-            <li><a href="galeri.html"><i class="fas fa-angle-right"></i> Galeri Multimedia</a></li>
-            <li><a href="tiket.html"><i class="fas fa-angle-right"></i> Tiket & Reservasi</a></li>
+            <li><a href="index.html">Beranda Utama</a></li>
+            <li><a href="eksklusif.html">Eksklusif & Insights</a></li>
+            <li><a href="spot-wisata.html">Spot Wisata Pilihan</a></li>
+            <li><a href="fasilitas.html">Fasilitas Terpadu</a></li>
+            <li><a href="sejarah.html">Linimasa Sejarah</a></li>
+            <li><a href="virtual-tour.html">Virtual Tour Studio</a></li>
+            <li><a href="galeri.html">Galeri Multimedia</a></li>
+            <li><a href="tiket.html">Tiket & Reservasi</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h3>Jam Operasional</h3>
-          <div class="footer-contact-item">
-            <i class="far fa-clock"></i>
+          <h4>Jam Layanan</h4>
+          <div style="font-size: 0.85rem; color: var(--text-lontar-muted); line-height: 1.8;">
             <div><strong>Setiap Hari:</strong><br>07.30 - 17.00 WIB</div>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-ship"></i>
-            <div><strong>Layanan Rakit:</strong><br>07.30 - 16.30 WIB</div>
+            <div style="margin-top: 10px;"><strong>Layanan Rakit:</strong><br>07.30 - 16.30 WIB</div>
           </div>
         </div>
 
         <div class="footer-col">
-          <h3>Kontak Resmi</h3>
-          <div class="footer-contact-item">
-            <i class="fas fa-map-marker-alt"></i>
+          <h4>Kontak Pengelola</h4>
+          <div style="font-size: 0.85rem; color: var(--text-lontar-muted); line-height: 1.8;">
             <div>Desa Cangkuang, Kec. Leles, Kabupaten Garut, Jawa Barat 44152</div>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-phone"></i>
-            <div>(0262) 234-5678 / WhatsApp Resmi</div>
+            <div style="margin-top: 8px; color: var(--gold-candi);">WhatsApp: +62 812-3456-7890</div>
           </div>
         </div>
       </div>
@@ -270,19 +296,12 @@
     </div>
   </footer>
 
-  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
   <script src="./assets/js/main.js"></script>
-    <!-- Tag Audio (Nuansa Sunda: Alunan Suling Merdu & Gemercik Air Alami) -->
-    <audio id="bgMusic" loop preload="none">
-        <source src="https://archive.org/download/suling-sunda/SULING%20SUNDA.mp3" type="audio/mpeg">
-        <source src="https://archive.org/download/degungsundanesemusicofwestjava/05%20-%20Ayun%20Ambing.mp3" type="audio/mpeg">
-    </audio>
-    <!-- Skrip Kustomisasi Gambar & Pemutar Musik Sunda -->
-    <script src="./assets/js/custom-images.js"></script>
-    <script src="./assets/js/music-player.js"></script>
+  <audio id="bgMusic" loop preload="none">
+    <source src="https://archive.org/download/suling-sunda/SULING%20SUNDA.mp3" type="audio/mpeg">
+    <source src="https://archive.org/download/degungsundanesemusicofwestjava/05%20-%20Ayun%20Ambing.mp3" type="audio/mpeg">
+  </audio>
+  <script src="./assets/js/custom-images.js"></script>
+  <script src="./assets/js/music-player.js"></script>
 </body>
 </html>
-

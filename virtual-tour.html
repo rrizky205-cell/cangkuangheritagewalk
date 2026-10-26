@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Peta Interaktif & Video Spot Virtual Tour Candi Cangkuang Garut: Jelajahi kompleks candi, Kampung Adat Pulo, dan Situ Cangkuang melalui pemutar video spot interaktif dan panduan navigasi Google Maps.">
-  <title>Peta & Video Tour | Candi Cangkuang Garut</title>
+  <title>Virtual Tour Studio & Peta | Candi Cangkuang Garut</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body style="background-color: var(--bg-dark); color: var(--text-light);">
+<body>
 
   <!-- =========================================================================
        HEADER & NAVBAR
@@ -52,7 +52,7 @@
           <i class="fas fa-volume-up"></i>
         </button>
         <a href="tiket.html" class="btn btn-primary btn-sm">
-          <i class="fas fa-ticket-alt"></i> Pesan Tiket
+          <i class="fas fa-ticket-alt"></i> <span>Pesan Tiket</span>
         </a>
         <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi">
           <i class="fas fa-bars"></i>
@@ -62,211 +62,216 @@
   </header>
 
   <!-- =========================================================================
-       SUBPAGE HERO BANNER
+       MAIN CONTENT: CINEMATIC VIRTUAL TOUR & MAPS
        ========================================================================= -->
-  <section class="subpage-hero" data-custom-folder="Menu Virtual Tour (Background)" style="background: linear-gradient(135deg, rgba(28, 43, 36, 0.94) 0%, rgba(13, 22, 18, 0.98) 100%), url('https://upload.wikimedia.org/wikipedia/commons/1/1c/Candi_cangkuang.jpg') center/cover no-repeat;">
-    <div class="container">
-      <div class="subpage-breadcrumb">
-        <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
-        <span>/</span>
-        <span>Peta & Virtual Tour 360°</span>
-      </div>
-      <h1 class="subpage-title">Peta & Video Tour Spot Wisata</h1>
-      <p class="subpage-desc">
-        Jelajahi kompleks Candi Cangkuang, Kampung Adat Pulo, dan Situ Cangkuang melalui video spot interaktif yang imersif dan panduan navigasi Google Maps menuju lokasi.
-      </p>
-    </div>
-  </section>
+  <main id="mainContent" class="page-main">
 
-  <!-- =========================================================================
-       MAIN CONTENT: VIRTUAL TOUR & MAPS
-       ========================================================================= -->
-  <main class="py-section" style="background-color: var(--bg-dark);">
-    <div class="container">
-
-      <!-- TAB BUTTONS -->
-      <div class="virtual-tour-tabs" style="margin-top: 0; margin-bottom: 40px;">
-        <button class="tab-btn active" data-tab="tabVideo">
-          <i class="fas fa-video"></i> Spot Video Explorer
-        </button>
-        <button class="tab-btn" data-tab="tabMaps">
-          <i class="fas fa-map-marked-alt"></i> Peta Lokasi & Panduan Rute
-        </button>
-      </div>
-
-      <!-- TAB 1: SPOT-BASED VIDEO PLAYER (DESKTOP: 2 COLS, MOBILE: STACKED per rules.md) -->
-      <div class="tab-content active" id="tabVideo">
-        <div class="tour-player-grid">
-          <!-- Spot List (Left on Desktop) -->
-          <div class="spot-nav-list">
-            <div class="spot-nav-title">
-              <i class="fas fa-list-ol"></i> Pilih Spot Tur Virtual:
-            </div>
-
-            <button class="spot-select-btn active" data-spot-id="1">
-              <div class="spot-btn-number">01</div>
-              <div class="spot-btn-info">
-                <h4>Kompleks Candi Cangkuang Utama</h4>
-                <span>Arsitektur Andesit Abad ke-8 & Arca Siwa</span>
-              </div>
-            </button>
-
-            <button class="spot-select-btn" data-spot-id="2">
-              <div class="spot-btn-number">02</div>
-              <div class="spot-btn-info">
-                <h4>Kampung Adat Pulo</h4>
-                <span>6 Rumah Berjajar & Falsafah Matrilineal</span>
-              </div>
-            </button>
-
-            <button class="spot-select-btn" data-spot-id="3">
-              <div class="spot-btn-number">03</div>
-              <div class="spot-btn-info">
-                <h4>Situ Cangkuang & Rakit Bambu</h4>
-                <span>Sensasi Menyeberang Danau Asri 25 Hektar</span>
-              </div>
-            </button>
-
-            <button class="spot-select-btn" data-spot-id="4">
-              <div class="spot-btn-number">04</div>
-              <div class="spot-btn-info">
-                <h4>Museum & Naskah Kuno Saeh</h4>
-                <span>Koleksi Naskah Kuno Kulit Kayu & Tembikar</span>
-              </div>
-            </button>
-          </div>
-
-          <!-- Video Player & Narration (Right on Desktop) -->
-          <div class="tour-video-display">
-            <div class="video-frame-container">
-              <iframe
-                id="tourIframe"
-                src="https://www.youtube.com/embed/EhoBqkJ87tI?autoplay=0&rel=0&modestbranding=1"
-                title="Virtual Tour Candi Cangkuang"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-              </iframe>
-            </div>
-
-            <div class="video-description-box">
-              <div class="video-desc-header">
-                <h3 class="video-spot-title" id="videoSpotTitle">Kompleks Candi Cangkuang Utama</h3>
-                <span class="video-spot-tag" id="videoSpotTag">Candi Hindu Abad ke-8</span>
-              </div>
-              <p class="video-spot-text" id="videoSpotDesc">
-                Candi berdenah bujur sangkar 4,5 x 4,5 meter ini didirikan pada abad ke-8 Masehi pada masa Kerajaan Sunda kuno. Ditemukan kembali tahun 1966 oleh tim arkeolog pimpinan Drs. Uka Tjandrasasmita. Di dalam ruangan utama candi terdapat lapik berhias arca Siwa/Batara Guru yang melambangkan keagungan peradaban masa lampau.
-              </p>
-            </div>
-          </div>
+    <!-- SUBPAGE HEADER -->
+    <section class="py-section" style="padding-top: calc(var(--header-height) + 40px); padding-bottom: 20px; text-align: center; background: radial-gradient(circle at center, rgba(30, 53, 47, 0.5) 0%, var(--bg-andesite) 100%);">
+      <div class="container">
+        <span class="section-badge"><i class="fas fa-vr-cardboard"></i> Immersive Digital Experience</span>
+        <h1 class="section-title">Cinematic Virtual Tour Studio</h1>
+        <div class="sunda-ornament-divider">
+          <i class="fas fa-gem sunda-ornament-icon"></i>
         </div>
+        <p class="section-desc">
+          Saksikan penjelajahan Candi Cangkuang, Kampung Adat Pulo, dan Situ Cangkuang melalui studio video cinematic beresolusi tinggi dengan indikator pemutar spot interaktif.
+        </p>
       </div>
+    </section>
 
+    <!-- CINEMATIC THEATER SECTION -->
+    <section class="py-section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cinematic-theater">
+          <!-- Theater Top Bar -->
+          <div class="theater-top-bar">
+            <div class="theater-title">
+              <i class="fas fa-film" style="color: var(--gold-candi);"></i>
+              <span id="cinematicSpotTitle">Kompleks Candi Cangkuang Utama</span>
+            </div>
+            <div class="live-badge">
+              <i class="fas fa-circle" style="font-size: 8px;"></i> Sedang Diputar
+            </div>
+          </div>
 
-      <!-- TAB 3: GOOGLE MAPS EMBED & PANDUAN TRANSPORTASI -->
-      <div class="tab-content" id="tabMaps">
-        <div class="maps-container-grid">
-          <div class="map-iframe-wrapper">
+          <!-- Screen Frame with Ambient Glow -->
+          <div class="theater-screen-wrapper">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.043743403565!2d107.91823977508687!3d-7.102607992900741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b75f5669ba2d%3A0x723fcad368df6d94!2sCandi%20Cangkuang!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
-              title="Google Maps Candi Cangkuang Garut"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
+              id="cinematicVideoFrame"
+              src="https://www.youtube.com/embed/EhoBqkJ87tI?autoplay=0&rel=0&modestbranding=1"
+              title="Virtual Tour Candi Cangkuang"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
             </iframe>
           </div>
 
-          <div class="route-guide-card">
-            <h3 class="route-guide-title"><i class="fas fa-directions"></i> Panduan Rute & Akses</h3>
+          <!-- Spot Selector Dock -->
+          <div class="tour-dock">
+            <button class="tour-dock-btn active" data-spot-id="1">
+              <div class="dock-btn-number">SPOT 01</div>
+              <div class="dock-btn-title">Kompleks Candi Utama</div>
+              <div class="dock-btn-sub">Arsitektur Andesit & Arca Siwa</div>
+            </button>
 
-            <div class="route-item">
-              <div class="route-icon"><i class="fas fa-car"></i></div>
-              <div class="route-desc">
-                <strong>Dari Bandung / Jakarta:</strong>
-                <p>Melalui Tol Purbaleunyi keluar di Gerbang Tol Cileunyi, lalu menuju arah Rancaekek - Nagreg - Kadungora - Alun-Alun Leles. Belok kiri ke Jl. Situ Cangkuang (±45 menit dari Cileunyi).</p>
-              </div>
+            <button class="tour-dock-btn" data-spot-id="2">
+              <div class="dock-btn-number">SPOT 02</div>
+              <div class="dock-btn-title">Kampung Adat Pulo</div>
+              <div class="dock-btn-sub">6 Rumah Berjajar & Matrilineal</div>
+            </button>
+
+            <button class="tour-dock-btn" data-spot-id="3">
+              <div class="dock-btn-number">SPOT 03</div>
+              <div class="dock-btn-title">Situ Cangkuang & Rakit</div>
+              <div class="dock-btn-sub">Getek Bambu Tradisional 25 Ha</div>
+            </button>
+
+            <button class="tour-dock-btn" data-spot-id="4">
+              <div class="dock-btn-number">SPOT 04</div>
+              <div class="dock-btn-title">Museum Naskah Saeh</div>
+              <div class="dock-btn-sub">Khazanah Manuskrip Abad XVII</div>
+            </button>
+          </div>
+
+          <!-- Spot Narration Card -->
+          <div style="background: rgba(18, 22, 19, 0.7); border: 1px solid var(--border-stone); border-radius: var(--radius-sm); padding: 20px; margin-top: 24px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--gold-candi); letter-spacing: 1px; margin-bottom: 4px;" id="cinematicSpotSub">
+              Arsitektur Andesit Abad ke-8 & Arca Siwa Batara Guru
             </div>
-
-            <div class="route-item">
-              <div class="route-icon"><i class="fas fa-train"></i></div>
-              <div class="route-desc">
-                <strong>Kereta Api (Stasiun Leles):</strong>
-                <p>Turun di Stasiun Kereta Api Leles Garut, dilanjutkan dengan ojek lokal atau angkutan pedesaan menuju gerbang wisata Candi Cangkuang (hanya ±10 menit).</p>
-              </div>
-            </div>
-
-            <div class="route-item">
-              <div class="route-icon"><i class="fas fa-ship"></i></div>
-              <div class="route-desc">
-                <strong>Penyeberangan Rakit Situ:</strong>
-                <p>Dari dermaga utama daratan, Anda akan menaiki rakit bambu getek menyeberangi danau selama 10-15 menit untuk tiba di pulau candi.</p>
-              </div>
-            </div>
-
-            <a href="https://maps.google.com/?q=Candi+Cangkuang+Garut" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm" style="margin-top:auto;">
-              <i class="fas fa-external-link-alt"></i> Buka Google Maps Langsung
-            </a>
+            <p style="font-size: 0.9rem; color: var(--text-lontar-muted); line-height: 1.65;" id="cinematicSpotDesc">
+              Candi andesit berbentuk bujur sangkar 4,5 x 4,5 meter peninggalan Kerajaan Sunda abad ke-8. Ditemukan kembali pada 1966 oleh tim arkeolog pimpinan Drs. Uka Tjandrasasmita dan dipugar secara cermat pada 1974-1976.
+            </p>
           </div>
         </div>
-      </div>
 
-    </div>
+        <!-- GOOGLE MAPS & RUTE PERJALANAN -->
+        <div style="margin-top: 60px;">
+          <div class="text-center" style="margin-bottom: 30px;">
+            <span class="section-badge"><i class="fas fa-map-marked-alt"></i> Navigasi Fisik</span>
+            <h2 class="section-title">Peta Lokasi & Panduan Rute Menuju Candi</h2>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; background: rgba(26, 29, 26, 0.85); border: 1px solid var(--border-gold-subtle); border-radius: var(--radius-md); padding: clamp(20px, 3vw, 36px);">
+            <!-- Map Iframe -->
+            <div style="border-radius: var(--radius-sm); overflow: hidden; min-height: 320px; border: 1px solid var(--border-stone);">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.043743403565!2d107.91823977508687!3d-7.102607992900741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b75f5669ba2d%3A0x723fcad368df6d94!2sCandi%20Cangkuang!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                width="100%"
+                height="100%"
+                style="border:0; min-height: 320px;"
+                allowfullscreen=""
+                loading="lazy">
+              </iframe>
+            </div>
+
+            <!-- Route Steps -->
+            <div style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <h3 style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--text-lontar); margin-bottom: 16px;">
+                  Petunjuk Perjalanan
+                </h3>
+                <div style="display: flex; gap: 14px; margin-bottom: 16px; font-size: 0.88rem; color: var(--text-lontar-muted);">
+                  <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(212, 175, 55, 0.15); color: var(--gold-candi); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <i class="fas fa-car"></i>
+                  </div>
+                  <div>
+                    <strong style="color: var(--text-lontar);">Dari Bandung / Tol Cileunyi:</strong>
+                    <p style="margin-top: 4px; line-height: 1.5;">Keluar Tol Cileunyi ➜ Rancaekek ➜ Nagreg ➜ Kadungora ➜ Alun-Alun Leles, belok kiri ke Jl. Situ Cangkuang (±45 menit).</p>
+                  </div>
+                </div>
+
+                <div style="display: flex; gap: 14px; margin-bottom: 16px; font-size: 0.88rem; color: var(--text-lontar-muted);">
+                  <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(212, 175, 55, 0.15); color: var(--gold-candi); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <i class="fas fa-train"></i>
+                  </div>
+                  <div>
+                    <strong style="color: var(--text-lontar);">Kereta Api (Stasiun Leles):</strong>
+                    <p style="margin-top: 4px; line-height: 1.5;">Turun di Stasiun Leles, dilanjutkan ojek atau angkot lokal sekitar 10 menit menuju dermaga Situ Cangkuang.</p>
+                  </div>
+                </div>
+
+                <div style="display: flex; gap: 14px; font-size: 0.88rem; color: var(--text-lontar-muted);">
+                  <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(212, 175, 55, 0.15); color: var(--gold-candi); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                    <i class="fas fa-ship"></i>
+                  </div>
+                  <div>
+                    <strong style="color: var(--text-lontar);">Penyeberangan Rakit Situ:</strong>
+                    <p style="margin-top: 4px; line-height: 1.5;">Menaiki rakit bambu tradisional mengarungi danau Situ Cangkuang selama 10-15 menit menuju pulau candi.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 24px;">
+                <a href="https://maps.google.com/?q=Candi+Cangkuang+Garut" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                  <i class="fas fa-external-link-alt"></i> Buka Rute di Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
-  <!-- FOOTER -->
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
           <h2>CANDI CANGKUANG</h2>
-          <p class="footer-quote">
+          <p>
             "Sampurasun! Wilujeng sumping di tanah leluhur Cangkuang. Menjaga jejak sejarah karuhun, merawat keselarasan alam Situ, dan melestarikan kearifan budaya tanah Sunda."
           </p>
         </div>
+
         <div class="footer-col">
-          <h3>Tautan Halaman</h3>
+          <h4>Menu Website</h4>
           <ul class="footer-links">
-            <li><a href="index.html"><i class="fas fa-angle-right"></i> Beranda Utama</a></li>
-            <li><a href="eksklusif.html"><i class="fas fa-angle-right"></i> Eksklusif & Insights</a></li>
-            <li><a href="spot-wisata.html"><i class="fas fa-angle-right"></i> Spot Wisata Pilihan</a></li>
-            <li><a href="fasilitas.html"><i class="fas fa-angle-right"></i> Fasilitas Terpadu</a></li>
-            <li><a href="sejarah.html"><i class="fas fa-angle-right"></i> Linimasa Sejarah</a></li>
-            <li><a href="virtual-tour.html"><i class="fas fa-angle-right"></i> Peta & Video Tour</a></li>
-            <li><a href="galeri.html"><i class="fas fa-angle-right"></i> Galeri Multimedia</a></li>
-            <li><a href="tiket.html"><i class="fas fa-angle-right"></i> Tiket & Reservasi</a></li>
+            <li><a href="index.html">Beranda Utama</a></li>
+            <li><a href="eksklusif.html">Eksklusif & Insights</a></li>
+            <li><a href="spot-wisata.html">Spot Wisata Pilihan</a></li>
+            <li><a href="fasilitas.html">Fasilitas Terpadu</a></li>
+            <li><a href="sejarah.html">Linimasa Sejarah</a></li>
+            <li><a href="virtual-tour.html">Virtual Tour Studio</a></li>
+            <li><a href="galeri.html">Galeri Multimedia</a></li>
+            <li><a href="tiket.html">Tiket & Reservasi</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
-          <h3>Jam Operasional</h3>
-          <div class="footer-contact-item">
-            <i class="far fa-clock"></i>
+          <h4>Jam Layanan</h4>
+          <div style="font-size: 0.85rem; color: var(--text-lontar-muted); line-height: 1.8;">
             <div><strong>Setiap Hari:</strong><br>07.30 - 17.00 WIB</div>
+            <div style="margin-top: 10px;"><strong>Layanan Rakit:</strong><br>07.30 - 16.30 WIB</div>
           </div>
         </div>
+
         <div class="footer-col">
-          <h3>Kontak Resmi</h3>
-          <div class="footer-contact-item">
-            <i class="fas fa-map-marker-alt"></i>
+          <h4>Kontak Pengelola</h4>
+          <div style="font-size: 0.85rem; color: var(--text-lontar-muted); line-height: 1.8;">
             <div>Desa Cangkuang, Kec. Leles, Kabupaten Garut, Jawa Barat 44152</div>
+            <div style="margin-top: 8px; color: var(--gold-candi);">WhatsApp: +62 812-3456-7890</div>
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
         <div>&copy; 2026 Candi Cangkuang Heritage Walk. Dilindungi Hak Cipta Dinas Pariwisata & Kebudayaan Kabupaten Garut.</div>
-        <div>Halaman Peta & Virtual Tour 360°</div>
+        <div>Halaman Virtual Tour Studio & Peta</div>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas"><i class="fas fa-chevron-up"></i></button>
-
   <script src="./assets/js/main.js"></script>
-    <!-- Tag Audio (Nuansa Sunda: Alunan Suling Merdu & Gemercik Air Alami) -->
-    <audio id="bgMusic" loop preload="none">
-        <source src="https://archive.org/download/suling-sunda/SULING%20SUNDA.mp3" type="audio/mpeg">
-        <source src="https://archive.org/download/degungsundanesemusicofwestjava/05%20-%20Ayun%20Ambing.mp3" type="audio/mpeg">
-    </audio>
-    <!-- Skrip Kustomisasi Gambar & Pemutar Musik Sunda -->
-    <script src="./assets/js/custom-images.js"></script>
-    <script src="./assets/js/music-player.js"></script>
+  <audio id="bgMusic" loop preload="none">
+    <source src="https://archive.org/download/suling-sunda/SULING%20SUNDA.mp3" type="audio/mpeg">
+    <source src="https://archive.org/download/degungsundanesemusicofwestjava/05%20-%20Ayun%20Ambing.mp3" type="audio/mpeg">
+  </audio>
+  <script src="./assets/js/custom-images.js"></script>
+  <script src="./assets/js/music-player.js"></script>
 </body>
 </html>
-

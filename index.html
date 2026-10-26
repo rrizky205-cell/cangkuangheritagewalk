@@ -38,7 +38,7 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation Menu (Links to dedicated subpages) -->
+      <!-- Desktop Navigation Menu -->
       <nav aria-label="Navigasi Utama">
         <ul class="nav-menu" id="navMenu">
           <li><a href="index.html" class="nav-link active">Beranda</a></li>
@@ -59,7 +59,7 @@
         </button>
 
         <a href="tiket.html" class="btn btn-primary btn-sm">
-          <i class="fas fa-ticket-alt"></i> Pesan Tiket
+          <i class="fas fa-ticket-alt"></i> <span>Pesan Tiket</span>
         </a>
 
         <!-- Mobile Hamburger Button -->
@@ -71,341 +71,369 @@
   </header>
 
   <!-- =========================================================================
-       2. HERO BANNER SECTION (SEMPURNA & IKONIK)
+       2. MAIN PAGE CONTENT (SPA PJAX CONTAINER)
        ========================================================================= -->
-  <section class="hero-section" data-custom-folder="Menu Beranda (Background)" id="beranda">
-    <div class="hero-overlay-pattern"></div>
-    <div class="container">
-      <div class="hero-content">
-        <!-- Hero Badge -->
-        <div class="hero-badge">
+  <main id="mainContent" class="page-main">
+
+    <!-- HERO SECTION WITH FLOATING MIST ANIMATION -->
+    <section class="hero-section" data-custom-folder="Menu Beranda (Background)" id="beranda">
+      <!-- Floating Mist Layer -->
+      <div class="mist-container">
+        <div class="mist-layer mist-layer-1"></div>
+        <div class="mist-layer mist-layer-2"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="section-badge">
           <i class="fas fa-monument"></i> Situs Cagar Budaya Abad ke-8 & Tradisi Pasundan
         </div>
 
-        <!-- Hero Title & Tagline -->
         <h1 class="hero-title">
-          Candi Cangkuang: Menelusuri Jejak <span class="highlight-gold">Peradaban Hindu Kuno</span> di Tengah Keindahan Situ Cangkuang
+          Candi Cangkuang
+          <span>Menelusuri Jejak Peradaban Hindu Kuno di Tengah Keindahan Situ Cangkuang</span>
         </h1>
 
-        <!-- Subtitle -->
         <p class="hero-subtitle">
           Satu-satunya candi Hindu di Tatar Pasundan yang berdiri megah di sebuah pulau kecil di tengah Situ Cangkuang, berpadu harmonis dengan kesakralan adat Kampung Pulo dan panorama danau Priangan.
         </p>
 
-        <!-- CTA Buttons pointing to dedicated subpages -->
         <div class="hero-cta-group">
-          <a href="eksklusif.html" class="btn btn-accent">
+          <a href="eksklusif.html" class="btn btn-primary">
             <i class="fas fa-sparkles"></i> Eksplorasi Eksklusif
           </a>
-          <a href="virtual-tour.html" class="btn btn-outline-white">
-            <i class="fas fa-vr-cardboard"></i> Virtual Tour 360°
+          <a href="virtual-tour.html" class="btn btn-secondary">
+            <i class="fas fa-vr-cardboard"></i> Virtual Tour Studio
           </a>
-          <a href="spot-wisata.html" class="btn btn-outline-white">
-            <i class="fas fa-compass"></i> Spot Wisata Pilihan
+          <a href="spot-wisata.html" class="btn btn-secondary">
+            <i class="fas fa-compass"></i> Spot Wisata Utama
           </a>
         </div>
 
         <!-- Quick Statistics Grid -->
         <div class="hero-stats-grid">
-          <div class="stat-card">
-            <div class="stat-number">Abad VIII</div>
-            <div class="stat-label">Era Pembangunan Candi Hindu Siwa Pertama di Pasundan</div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-number">Abad VIII</div>
+            <div class="hero-stat-label">Era Pembangunan Candi Hindu Siwa Pertama di Pasundan</div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">1-Satunya</div>
-            <div class="stat-label">Candi Hindu Kuno Berdiri di Tatar Sunda Jawa Barat</div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-number">1-Satunya</div>
+            <div class="hero-stat-label">Candi Hindu Kuno Berdiri di Tatar Sunda Jawa Barat</div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">6 Rumah</div>
-            <div class="stat-label">Arsitektur Adat Kampung Pulo dengan Jumlah Lestari</div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-number">6 Rumah</div>
+            <div class="hero-stat-label">Arsitektur Adat Kampung Pulo dengan Jumlah Lestari</div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">25 Hektar</div>
-            <div class="stat-label">Luas Danau Situ Cangkuang dengan Rakit Tradisional</div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-number">25 Hektar</div>
+            <div class="hero-stat-label">Luas Danau Situ Cangkuang dengan Rakit Tradisional</div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- =========================================================================
-       3. SEKILAS CANDI CANGKUANG (EXECUTIVE OVERVIEW TEASER)
-       ========================================================================= -->
-  <section class="py-section" style="background:#FFFFFF; border-bottom:1px solid var(--border-light);">
-    <div class="container">
-      <div class="feature-split">
-        <div class="feature-split-img">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Candi_cangkuang.jpg" alt="Panorama Candi Cangkuang" loading="lazy">
-        </div>
-        <div class="feature-split-content">
-          <span class="section-badge badge-accent">
-            <i class="fas fa-monument"></i> Sekilas Warisan Karuhun
+    <!-- SECTION DIVIDER (WAVE) -->
+    <div class="wave-divider">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z" fill="#142521"></path>
+      </svg>
+    </div>
+
+    <!-- 3. SIGNATURE INTERACTION: SIMULASI DENAH SAKRAL 6+1 KAMPUNG PULO -->
+    <section class="pulo-simulator-section py-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-badge">
+            <i class="fas fa-compass"></i> Signature Interactive Experience
           </span>
-          <h2 class="section-title">Permata Sejarah di Tengah Situ Garut</h2>
-          <p style="color:var(--text-muted); line-height:1.75;">
-            Berlokasi di Desa Cangkuang, Kecamatan Leles, Kabupaten Garut, Candi Cangkuang merupakan keajaiban arkeologis yang unik di Jawa Barat. Candi berbahan batu andesit ini didirikan pada abad ke-8 Masehi pada era Kerajaan Sunda kuno dan menjadi satu-satunya candi Hindu yang pernah ditemukan di tatar Pasundan.
-          </p>
-          <div class="culture-quote-box">
-            "Sebuah pulau kecil yang memadukan keagungan peradaban Hindu abad ke-8, makam penyebar Islam abad ke-17, dan kearifan masyarakat adat Kampung Pulo yang terjaga murni."
+          <h2 class="section-title">Simulasi Denah Sakral "6+1 Kampung Pulo"</h2>
+          <div class="sunda-ornament-divider">
+            <i class="fas fa-gem sunda-ornament-icon"></i>
           </div>
-          <p style="color:var(--text-muted); line-height:1.75;">
-            Untuk mencapai candi ini, wisatawan akan menaiki rakit bambu tradisional mengarungi danau Situ Cangkuang seluas 25 hektar yang tenang dan dikelilingi perbukitan hijau Priangan.
+          <p class="section-desc">
+            Visualisasi arsitektur unik perkampungan adat tertutup: 3 rumah berjejer di utara, 3 rumah berjejer di selatan, dan 1 tajug pusaka di ujung barat yang melambangkan 7 anak Embah Dalem Arif Muhammad. Sentuh atau klik bangunan untuk membuka filosofi adatnya.
           </p>
-          <div style="display:flex; gap:16px; margin-top:10px; flex-wrap:wrap;">
-            <a href="sejarah.html" class="btn btn-primary btn-sm">
-              <i class="fas fa-scroll"></i> Baca Sejarah Lengkap
-            </a>
-            <a href="spot-wisata.html" class="btn btn-outline-white btn-sm" style="color:var(--primary); border-color:var(--primary);">
-              <i class="fas fa-map-marked-alt"></i> Lihat Spot Wisata
-            </a>
+
+          <!-- Filter Chips -->
+          <div class="pulo-filter-chips">
+            <button class="pulo-filter-btn active" data-filter="all">Tampilkan Semua (6+1)</button>
+            <button class="pulo-filter-btn" data-filter="kaler">Barisan Utara (3 Putri)</button>
+            <button class="pulo-filter-btn" data-filter="kidul">Barisan Selatan (3 Putri)</button>
+            <button class="pulo-filter-btn" data-filter="tajug">Tajug Pusaka (1 Putra)</button>
+          </div>
+        </div>
+
+        <div class="pulo-simulator-card">
+          <div class="pulo-layout-wrapper">
+            <!-- Architectural Map Canvas -->
+            <div class="pulo-map-canvas">
+              <!-- North Row -->
+              <div>
+                <div class="pulo-row-label">
+                  <i class="fas fa-arrow-up"></i> Barisan Utara (Bumi Kaler - 3 Putri Leluhur)
+                </div>
+                <div class="pulo-buildings-row">
+                  <div class="pulo-node selected" data-pulo-id="1" data-row="kaler">
+                    <div class="pulo-beacon"></div>
+                    <div class="pulo-node-icon"><i class="fas fa-home"></i></div>
+                    <div class="pulo-node-title">Bumi Kaler 1</div>
+                    <div class="pulo-node-sub">Putri Sulung</div>
+                  </div>
+                  <div class="pulo-node" data-pulo-id="2" data-row="kaler">
+                    <div class="pulo-beacon"></div>
+                    <div class="pulo-node-icon"><i class="fas fa-book"></i></div>
+                    <div class="pulo-node-title">Bumi Kaler 2</div>
+                    <div class="pulo-node-sub">Pusaka & Naskah</div>
+                  </div>
+                  <div class="pulo-node" data-pulo-id="3" data-row="kaler">
+                    <div class="pulo-beacon"></div>
+                    <div class="pulo-node-icon"><i class="fas fa-users"></i></div>
+                    <div class="pulo-node-title">Bumi Kaler 3</div>
+                    <div class="pulo-node-sub">Musyawarah Adat</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Central Pathway -->
+              <div class="pulo-pathway">
+                <i class="fas fa-shoe-prints"></i> Pelataran Adat & Jalan Setapak Bebatuan Alami (Pantangan Memukul Gong) <i class="fas fa-shoe-prints"></i>
+              </div>
+
+              <!-- South Row -->
+              <div>
+                <div class="pulo-row-label">
+                  <i class="fas fa-arrow-down"></i> Barisan Selatan (Bumi Kidul - 3 Putri Leluhur)
+                </div>
+                <div class="pulo-buildings-row">
+                  <div class="pulo-node" data-pulo-id="4" data-row="kidul">
+                    <div class="pulo-beacon"></div>
+                    <div class="pulo-node-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="pulo-node-title">Bumi Kidul 1</div>
+                    <div class="pulo-node-sub">Pelindung Adat</div>
+                  </div>
+                  <div class="pulo-node" data-pulo-id="5" data-row="kidul">
+                    <div class="pulo-beacon"></div>
+                    <div class="pulo-node-icon"><i class="fas fa-seedling"></i></div>
+                    <div class="pulo-node-title">Bumi Kidul 2</div>
+                    <div class="pulo-node-sub">Lumbung Pangan</div>
+                  </div>
+                  <div class="pulo-node" data-pulo-id="6" data-row="kidul">
+                    <div class="pulo-beacon"></div>
+                    <div class="pulo-node-icon"><i class="fas fa-hands-helping"></i></div>
+                    <div class="pulo-node-title">Bumi Kidul 3</div>
+                    <div class="pulo-node-sub">Silaturahmi Tamu</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Focal Tajug / Mushola -->
+              <div class="pulo-tajug-zone">
+                <div class="pulo-node" data-pulo-id="7" data-row="tajug" style="max-width: 280px; width: 100%;">
+                  <div class="pulo-beacon"></div>
+                  <div class="pulo-node-icon" style="color:#F3E5AB;"><i class="fas fa-mosque"></i></div>
+                  <div class="pulo-node-title">Tajug Karomah Embah Dalem</div>
+                  <div class="pulo-node-sub">Simbol Putra Tunggal & Tauhid Abad XVII</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Inspector Panel -->
+            <div class="pulo-inspector" id="puloInspector">
+              <span class="inspector-tag" id="inspectorTag">Garis Matrilineal Sulung • Baris Utara</span>
+              <h3 class="inspector-title" id="inspectorTitle">Bumi Kaler 1 (Imah Putri Sulung)</h3>
+              <p class="inspector-desc" id="inspectorDesc">
+                Kediaman putri tertua generasi pewaris garis ibu (matrilineal). Sesuai hukum adat leluhur sejak abad ke-17, kepemilikan rumah panggung ini tidak boleh diperjualbelikan dan hanya diwariskan eksklusif ke anak perempuan sulung.
+              </p>
+              <ul class="inspector-meta-list">
+                <li><strong>Hak Waris:</strong> <span id="inspectorPewaris">Putri Tertua Generasi Berjalan</span></li>
+                <li><strong>Arsitektur:</strong> <span id="inspectorArsitektur">Panggung Kayu Alami, Atap Suhunan Ijuk</span></li>
+                <li><strong>Aturan Adat:</strong> <span id="inspectorPantangan">Dilarang menambah kamar permanen & mengubah arah pintu hadap selatan.</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- SECTION DIVIDER (WAVE INVERTED) -->
+    <div class="wave-divider top">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z" fill="#142521"></path>
+      </svg>
     </div>
-  </section>
 
-  <!-- =========================================================================
-       4. PORTAL EKSPLORASI UTAMA (MENU HUB DIRECTORY)
-       Pisahkan isi setiap menu: Pengunjung memilih menu untuk melihat isi lengkapnya!
-       ========================================================================= -->
-  <section class="portal-section py-section">
-    <div class="container">
-      <div class="text-center">
-        <span class="section-badge">
-          <i class="fas fa-th-large"></i> Direktori Navigasi Lengkap
-        </span>
-        <h2 class="section-title">Pilih Menu untuk Eksplorasi Lebih Dalam</h2>
-        <p class="section-desc">
-          Setiap menu di bawah ini memuat informasi mendalam dan interaktif seputar Candi Cangkuang. Klik salah satu menu untuk langsung menuju halaman khusus yang Anda inginkan:
-        </p>
-      </div>
-
-      <!-- PORTAL CARDS GRID -->
-      <div class="portal-grid">
-        <!-- 1. Eksklusif & Hidden Insights -->
-        <article class="portal-card">
-          <div class="portal-card-icon">
-            <i class="fas fa-sparkles"></i>
-          </div>
-          <span class="portal-card-tag">Informasi Langka</span>
-          <h3 class="portal-card-title">Eksklusif & Hidden Insights</h3>
-          <p class="portal-card-desc">
-            Ungkap misteri arca Siwa Batara Guru, naskah kuno kulit kayu Saeh abad ke-17, hukum adat 6 rumah Kampung Pulo, serta kartu trivia interaktif sejarah langka.
-          </p>
-          <a href="eksklusif.html" class="portal-card-btn">
-            Buka Halaman Eksklusif <i class="fas fa-arrow-right"></i>
-          </a>
-        </article>
-
-        <!-- 2. Spot Wisata Utama -->
-        <article class="portal-card">
-          <div class="portal-card-icon">
-            <i class="fas fa-map-marked-alt"></i>
-          </div>
-          <span class="portal-card-tag">Destinasi Pilihan</span>
-          <h3 class="portal-card-title">Spot Wisata Utama</h3>
-          <p class="portal-card-desc">
-            Ulasan lengkap Candi Cangkuang Utama, perkampungan adat Kampung Pulo, danau Situ Cangkuang, museum arkeologi, makam bersejarah, dan fasilitas wisata.
-          </p>
-          <a href="spot-wisata.html" class="portal-card-btn">
-            Jelajahi Spot Wisata <i class="fas fa-arrow-right"></i>
-          </a>
-        </article>
-
-        <!-- 3. Sejarah & Budaya -->
-        <article class="portal-card">
-          <div class="portal-card-icon">
-            <i class="fas fa-history"></i>
-          </div>
-          <span class="portal-card-tag">Linimasa Arkeologi</span>
-          <h3 class="portal-card-title">Sejarah & Budaya Nusantara</h3>
-          <p class="portal-card-desc">
-            Linimasa kronologis dari era Kerajaan Sunda abad ke-8, syiar Islam Embah Dalem Arif Muhammad, penemuan kembali 1966, hingga pemugaran resmi 1976.
-          </p>
-          <a href="sejarah.html" class="portal-card-btn">
-            Buka Linimasa Sejarah <i class="fas fa-arrow-right"></i>
-          </a>
-        </article>
-
-        <!-- 4. Peta & Virtual Tour 360° -->
-        <article class="portal-card">
-          <div class="portal-card-icon">
-            <i class="fas fa-vr-cardboard"></i>
-          </div>
-          <span class="portal-card-tag">Tur Digital Imersif</span>
-          <h3 class="portal-card-title">Peta & Virtual Tour 360°</h3>
-          <p class="portal-card-desc">
-            Rasakan sensasi berada langsung di Candi Cangkuang dengan simulator 360 derajat interaktif, pemutar video spot-based, dan panduan Google Maps.
-          </p>
-          <a href="virtual-tour.html" class="portal-card-btn">
-            Mulai Tur Virtual 360° <i class="fas fa-arrow-right"></i>
-          </a>
-        </article>
-
-        <!-- 5. Galeri Foto & Multimedia -->
-        <article class="portal-card">
-          <div class="portal-card-icon">
-            <i class="fas fa-camera-retro"></i>
-          </div>
-          <span class="portal-card-tag">Dokumentasi Visual</span>
-          <h3 class="portal-card-title">Galeri Foto & Multimedia</h3>
-          <p class="portal-card-desc">
-            Kumpulan foto resolusi tinggi berfitur lightbox canggih dengan filter kategori (Arsitektur Candi, Danau, Budaya) serta tayangan video dokumenter.
-          </p>
-          <a href="galeri.html" class="portal-card-btn">
-            Buka Galeri Foto <i class="fas fa-arrow-right"></i>
-          </a>
-        </article>
-
-        <!-- 6. Tiket Masuk & Reservasi -->
-        <article class="portal-card">
-          <div class="portal-card-icon">
-            <i class="fas fa-ticket-alt"></i>
-          </div>
-          <span class="portal-card-tag">Tarif & Pemesanan</span>
-          <h3 class="portal-card-title">Tiket & Reservasi Rakit</h3>
-          <p class="portal-card-desc">
-            Daftar tarif resmi tiket masuk domestik/asing, sewa rakit bambu getek PP, kalkulator biaya otomatis, serta formulir pemesanan online instan.
-          </p>
-          <a href="tiket.html" class="portal-card-btn">
-            Hitung Tiket & Booking <i class="fas fa-arrow-right"></i>
-          </a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       5. HIGHLIGHT SOROTAN IKONIK: SITU CANGKUANG & RAKIT BAMBU
-       ========================================================================= -->
-  <section class="py-section" style="background:#F8F5EE; border-top:1px solid var(--border-light); border-bottom:1px solid var(--border-light);">
-    <div class="container">
-      <div class="feature-split">
-        <div class="feature-split-content" style="order:2;">
-          <span class="section-badge badge-accent">
-            <i class="fas fa-ship"></i> Pengalaman Ikonik Wisatawan
+    <!-- 4. PORTAL EKSPLORASI UTAMA (MENU HUB DIRECTORY) -->
+    <section class="portal-section py-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-badge">
+            <i class="fas fa-th-large"></i> Direktori Navigasi Lengkap
           </span>
-          <h2 class="section-title">Sensasi Menyeberang dengan Rakit Getek Bambu</h2>
-          <p style="color:var(--text-muted); line-height:1.75;">
-            Salah satu daya tarik paling berkesan saat mengunjungi Candi Cangkuang adalah menyeberangi perairan Situ Cangkuang menggunakan rakit bambu tradisional (getek). Tanpa deru bising mesin motor, rakit meluncur hening di atas air jernih dengan kayuhan galah bambu oleh pemuda desa setempat.
-          </p>
-          <ul class="insight-list" style="margin-top:10px;">
-            <li><strong>Ramah Lingkungan:</strong> Bebas polusi suara dan asap untuk menjaga kelestarian teratai danau.</li>
-            <li><strong>Panorama Pegunungan:</strong> Sudut pandang memukau menghadap ke Gunung Haruman.</li>
-            <li><strong>Tarif Terjangkau:</strong> Hanya Rp 10.000 / orang untuk penyeberangan pergi-pulang (PP).</li>
-          </ul>
-          <div style="margin-top:20px;">
-            <a href="tiket.html" class="btn btn-primary">
-              <i class="fas fa-ticket-alt"></i> Pesan Tiket Rakit Bambu
-            </a>
+          <h2 class="section-title">Pilih Menu untuk Eksplorasi Lebih Dalam</h2>
+          <div class="sunda-ornament-divider">
+            <i class="fas fa-gem sunda-ornament-icon"></i>
           </div>
-        </div>
-        <div class="feature-split-img" style="order:1;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Foto_untuk_wikipedia_Rika.jpg" alt="Rakit Tradisional Situ Cangkuang" loading="lazy">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       6. TESTIMONI & ULASAN WISATAWAN
-       ========================================================================= -->
-  <section class="testimonials-section py-section">
-    <div class="container">
-      <div class="text-center">
-        <span class="section-badge badge-accent">
-          <i class="fas fa-comment-dots"></i> Suara Wisatawan
-        </span>
-        <h2 class="section-title">Apa Kata Mereka Tentang Candi Cangkuang?</h2>
-        <p class="section-desc">Kesan nyata dari sejarawan, budayawan, dan wisatawan keluarga yang telah berkunjung.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="rating-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">
-            "Pengalaman menaiki rakit bambu di pagi hari sungguh magis. Melihat candi Hindu abad ke-8 berdampingan damai dengan makam Embah Dalem adalah bukti toleransi bangsa yang sangat luar biasa."
+          <p class="section-desc">
+            Setiap menu di bawah ini memuat informasi mendalam dan interaktif seputar Candi Cangkuang. Klik salah satu menu untuk langsung menuju halaman khusus yang Anda inginkan:
           </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">AP</div>
-            <div class="author-info">
-              <h4>Aditya Pratama</h4>
-              <span>Peneliti Sejarah Budaya, Bandung</span>
+        </div>
+
+        <!-- PORTAL CARDS GRID -->
+        <div class="portal-grid">
+          <!-- 1. Eksklusif & Hidden Insights -->
+          <article class="portal-card">
+            <div class="portal-card-icon">
+              <i class="fas fa-sparkles"></i>
             </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="rating-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">
-            "Kampung Adat Pulo memberikan wawasan mendalam tentang kearifan lokal. Falsafah 6 rumah dan sistem matrilineal membuat saya kagum betapa teguhnya mereka menjaga warisan karuhun."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">SN</div>
-            <div class="author-info">
-              <h4>Siti Nurhaliza</h4>
-              <span>Wisatawan Edukasi, Jakarta</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="rating-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">
-            "Sangat cocok untuk liburan keluarga dan edukasi anak. Tiketnya terjangkau, udaranya sejuk, pemandangan Gunung Haruman sangat indah. Museum naskah kulit kayunya luar biasa."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">HW</div>
-            <div class="author-info">
-              <h4>Hendra Wijaya</h4>
-              <span>Wisatawan Keluarga, Bogor</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       7. INFORMASI KUNJUNGAN CEPAT (QUICK INFO SUMMARY)
-       ========================================================================= -->
-  <section class="py-section" style="background:#FFFFFF; border-top:1px solid var(--border-light);">
-    <div class="container">
-      <div style="background:linear-gradient(135deg, var(--bg-dark), var(--bg-darker)); color:#FFFFFF; border-radius:var(--radius-lg); padding:48px 36px; border:1px solid var(--border-dark); box-shadow:var(--shadow-floating);">
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:32px; align-items:center;">
-          <div>
-            <span style="font-size:0.8rem; text-transform:uppercase; color:var(--accent); font-weight:700; letter-spacing:1px;">Informasi Kunjungan Cepat</span>
-            <h3 style="font-family:var(--font-heading); font-size:1.8rem; margin:10px 0 14px; color:#FFFFFF;">Siap Menjelajahi Cangkuang?</h3>
-            <p style="font-size:0.92rem; color:var(--text-light-muted); line-height:1.6;">
-              Buka setiap hari mulai pukul 07.30 hingga 17.00 WIB. Lokasi mudah dijangkau dari arah Bandung dan Garut Kota.
+            <span class="portal-card-tag">Informasi Langka</span>
+            <h3 class="portal-card-title">Eksklusif & Hidden Insights</h3>
+            <p class="portal-card-desc">
+              Ungkap misteri arca Siwa Batara Guru, naskah kuno kulit kayu Saeh abad ke-17, hukum adat 6 rumah Kampung Pulo, serta kartu trivia interaktif sejarah langka.
             </p>
-          </div>
-
-          <div style="display:flex; flex-direction:column; gap:12px; font-size:0.9rem; color:var(--text-light-muted);">
-            <div><i class="far fa-clock" style="color:var(--accent); width:20px;"></i> <strong>Jam Operasional:</strong> 07.30 - 17.00 WIB</div>
-            <div><i class="fas fa-ticket-alt" style="color:var(--accent); width:20px;"></i> <strong>Tiket Masuk:</strong> Mulai Rp 10.000 / orang</div>
-            <div><i class="fas fa-ship" style="color:var(--accent); width:20px;"></i> <strong>Rakit Situ:</strong> Rp 10.000 PP</div>
-            <div><i class="fas fa-map-marker-alt" style="color:var(--accent); width:20px;"></i> <strong>Lokasi:</strong> Kec. Leles, Kab. Garut</div>
-          </div>
-
-          <div style="display:flex; flex-direction:column; gap:14px;">
-            <a href="tiket.html" class="btn btn-accent" style="width:100%; text-align:center;">
-              <i class="fas fa-ticket-alt"></i> Pesan Tiket Sekarang
+            <a href="eksklusif.html" class="portal-card-btn">
+              Buka Halaman Eksklusif <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="virtual-tour.html" class="btn btn-outline-white" style="width:100%; text-align:center;">
-              <i class="fas fa-compass"></i> Panduan Rute & Maps
+          </article>
+
+          <!-- 2. Spot Wisata Utama -->
+          <article class="portal-card">
+            <div class="portal-card-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <span class="portal-card-tag">Destinasi Pilihan</span>
+            <h3 class="portal-card-title">Spot Wisata Utama</h3>
+            <p class="portal-card-desc">
+              Ulasan lengkap Candi Cangkuang Utama, perkampungan adat Kampung Pulo, danau Situ Cangkuang, museum arkeologi, makam bersejarah, dan fasilitas wisata.
+            </p>
+            <a href="spot-wisata.html" class="portal-card-btn">
+              Jelajahi Spot Wisata <i class="fas fa-arrow-right"></i>
             </a>
+          </article>
+
+          <!-- 3. Sejarah & Budaya -->
+          <article class="portal-card">
+            <div class="portal-card-icon">
+              <i class="fas fa-history"></i>
+            </div>
+            <span class="portal-card-tag">Linimasa Arkeologi</span>
+            <h3 class="portal-card-title">Sejarah & Budaya Nusantara</h3>
+            <p class="portal-card-desc">
+              Linimasa kronologis dari era Kerajaan Sunda abad ke-8, syiar Islam Embah Dalem Arif Muhammad, penemuan kembali 1966, hingga pemugaran resmi 1976.
+            </p>
+            <a href="sejarah.html" class="portal-card-btn">
+              Buka Linimasa Sejarah <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- 4. Peta & Virtual Tour 360° -->
+          <article class="portal-card">
+            <div class="portal-card-icon">
+              <i class="fas fa-vr-cardboard"></i>
+            </div>
+            <span class="portal-card-tag">Tur Digital Imersif</span>
+            <h3 class="portal-card-title">Peta & Virtual Tour Studio</h3>
+            <p class="portal-card-desc">
+              Rasakan sensasi berada langsung di Candi Cangkuang dengan studio video cinematic interaktif, panduan spot dan navigasi lokasi Google Maps.
+            </p>
+            <a href="virtual-tour.html" class="portal-card-btn">
+              Mulai Tur Virtual <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- 5. Galeri Foto & Multimedia -->
+          <article class="portal-card">
+            <div class="portal-card-icon">
+              <i class="fas fa-camera-retro"></i>
+            </div>
+            <span class="portal-card-tag">Dokumentasi Visual</span>
+            <h3 class="portal-card-title">Galeri Foto & Multimedia</h3>
+            <p class="portal-card-desc">
+              Kumpulan foto resolusi tinggi berfitur lightbox canggih dengan filter kategori (Arsitektur Candi, Danau, Budaya) serta tayangan video dokumenter.
+            </p>
+            <a href="galeri.html" class="portal-card-btn">
+              Buka Galeri Foto <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- 6. Tiket Masuk & Reservasi -->
+          <article class="portal-card">
+            <div class="portal-card-icon">
+              <i class="fas fa-ticket-alt"></i>
+            </div>
+            <span class="portal-card-tag">Tarif & Pemesanan</span>
+            <h3 class="portal-card-title">Tiket & Reservasi Rakit</h3>
+            <p class="portal-card-desc">
+              Daftar tarif resmi tiket masuk domestik/asing, sewa rakit bambu getek PP, kalkulator biaya otomatis, serta formulir pemesanan online instan.
+            </p>
+            <a href="tiket.html" class="portal-card-btn">
+              Hitung Tiket & Booking <i class="fas fa-arrow-right"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. HIGHLIGHT SOROTAN: SITU CANGKUANG & RAKIT GETEK BAMBU -->
+    <section class="py-section" style="background: rgba(20, 37, 33, 0.4); border-top: 1px solid var(--border-stone); border-bottom: 1px solid var(--border-stone);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+          <div>
+            <span class="section-badge">
+              <i class="fas fa-ship"></i> Pengalaman Ikonik Wisatawan
+            </span>
+            <h2 class="section-title">Sensasi Menyeberang dengan Rakit Getek Bambu</h2>
+            <div class="sunda-ornament-divider" style="margin: 14px 0 24px 0; max-width: 220px;">
+              <i class="fas fa-gem sunda-ornament-icon"></i>
+            </div>
+            <p style="color: var(--text-lontar-muted); line-height: 1.75; margin-bottom: 18px;">
+              Salah satu daya tarik paling berkesan saat mengunjungi Candi Cangkuang adalah menyeberangi perairan Situ Cangkuang menggunakan rakit bambu tradisional (getek). Tanpa deru bising mesin motor, rakit meluncur hening di atas air jernih dengan kayuhan galah bambu oleh pemuda desa setempat.
+            </p>
+            <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+              <a href="tiket.html" class="btn btn-primary">
+                <i class="fas fa-ticket-alt"></i> Pesan Tiket Rakit Bambu
+              </a>
+              <a href="spot-wisata.html" class="btn btn-secondary">
+                <i class="fas fa-map-marked-alt"></i> Detail Spot Wisata
+              </a>
+            </div>
+          </div>
+          <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-gold); box-shadow: var(--shadow-lg);">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Foto_untuk_wikipedia_Rika.jpg" alt="Rakit Tradisional Situ Cangkuang" loading="lazy" style="width: 100%; height: auto; display: block;">
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- 6. INFORMASI KUNJUNGAN CEPAT (QUICK INFO SUMMARY) -->
+    <section class="py-section">
+      <div class="container">
+        <div style="background: rgba(26, 29, 26, 0.9); border: 1px solid var(--border-gold); border-radius: var(--radius-lg); padding: clamp(28px, 4vw, 44px); box-shadow: var(--shadow-lg);">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; align-items: center;">
+            <div>
+              <span class="section-badge"><i class="far fa-clock"></i> Akses & Jadwal</span>
+              <h3 style="font-family: var(--font-heading); font-size: 1.7rem; color: var(--text-lontar); margin: 8px 0 12px 0;">Siap Menjelajahi Cangkuang?</h3>
+              <p style="color: var(--text-lontar-muted); line-height: 1.6; font-size: 0.92rem;">
+                Buka setiap hari pukul 07.30 - 17.00 WIB. Lokasi berada di Kecamatan Leles, mudah diakses dari arah Bandung maupun Garut Kota.
+              </p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem; color: var(--text-lontar-muted);">
+              <div><i class="fas fa-ticket-alt" style="color: var(--gold-candi); width: 20px;"></i> <strong>Tiket Masuk:</strong> Rp 10.000 / orang</div>
+              <div><i class="fas fa-ship" style="color: var(--gold-candi); width: 20px;"></i> <strong>Rakit Bambu PP:</strong> Rp 10.000 / orang</div>
+              <div><i class="fas fa-map-marker-alt" style="color: var(--gold-candi); width: 20px;"></i> <strong>Alamat:</strong> Desa Cangkuang, Leles, Garut</div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <a href="tiket.html" class="btn btn-primary" style="justify-content: center;">
+                <i class="fas fa-ticket-alt"></i> Pesan Tiket Sekarang
+              </a>
+              <a href="virtual-tour.html" class="btn btn-secondary" style="justify-content: center;">
+                <i class="fas fa-compass"></i> Panduan Rute & Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- =========================================================================
        8. FOOTER SECTION
@@ -415,52 +443,38 @@
       <div class="footer-top">
         <div class="footer-brand">
           <h2>CANDI CANGKUANG</h2>
-          <p class="footer-quote">
+          <p>
             "Sampurasun! Wilujeng sumping di tanah leluhur Cangkuang. Menjaga jejak sejarah karuhun, merawat keselarasan alam Situ, dan melestarikan kearifan budaya tanah Sunda."
           </p>
-          <div class="footer-socials">
-            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-          </div>
         </div>
 
         <div class="footer-col">
-          <h3>Menu Website</h3>
+          <h4>Menu Website</h4>
           <ul class="footer-links">
-            <li><a href="index.html"><i class="fas fa-angle-right"></i> Beranda Utama</a></li>
-            <li><a href="eksklusif.html"><i class="fas fa-angle-right"></i> Eksklusif & Insights</a></li>
-            <li><a href="spot-wisata.html"><i class="fas fa-angle-right"></i> Spot Wisata Pilihan</a></li>
-            <li><a href="fasilitas.html"><i class="fas fa-angle-right"></i> Fasilitas Terpadu</a></li>
-            <li><a href="sejarah.html"><i class="fas fa-angle-right"></i> Linimasa Sejarah</a></li>
-            <li><a href="virtual-tour.html"><i class="fas fa-angle-right"></i> Virtual Tour 360°</a></li>
-            <li><a href="galeri.html"><i class="fas fa-angle-right"></i> Galeri Multimedia</a></li>
-            <li><a href="tiket.html"><i class="fas fa-angle-right"></i> Tiket & Reservasi</a></li>
+            <li><a href="index.html">Beranda Utama</a></li>
+            <li><a href="eksklusif.html">Eksklusif & Insights</a></li>
+            <li><a href="spot-wisata.html">Spot Wisata Pilihan</a></li>
+            <li><a href="fasilitas.html">Fasilitas Terpadu</a></li>
+            <li><a href="sejarah.html">Linimasa Sejarah</a></li>
+            <li><a href="virtual-tour.html">Virtual Tour Studio</a></li>
+            <li><a href="galeri.html">Galeri Multimedia</a></li>
+            <li><a href="tiket.html">Tiket & Reservasi</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h3>Jam Layanan</h3>
-          <div class="footer-contact-item">
-            <i class="far fa-clock"></i>
+          <h4>Jam Layanan</h4>
+          <div style="font-size: 0.85rem; color: var(--text-lontar-muted); line-height: 1.8;">
             <div><strong>Setiap Hari:</strong><br>07.30 - 17.00 WIB</div>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-ship"></i>
-            <div><strong>Layanan Rakit:</strong><br>07.30 - 16.30 WIB</div>
+            <div style="margin-top: 10px;"><strong>Layanan Rakit:</strong><br>07.30 - 16.30 WIB</div>
           </div>
         </div>
 
         <div class="footer-col">
-          <h3>Kontak Pengelola</h3>
-          <div class="footer-contact-item">
-            <i class="fas fa-map-marker-alt"></i>
+          <h4>Kontak Pengelola</h4>
+          <div style="font-size: 0.85rem; color: var(--text-lontar-muted); line-height: 1.8;">
             <div>Desa Cangkuang, Kec. Leles, Kabupaten Garut, Jawa Barat 44152</div>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-phone"></i>
-            <div>(0262) 234-5678 / WhatsApp Resmi</div>
+            <div style="margin-top: 8px; color: var(--gold-candi);">WhatsApp: +62 812-3456-7890</div>
           </div>
         </div>
       </div>
@@ -472,19 +486,13 @@
     </div>
   </footer>
 
-  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
   <script src="./assets/js/main.js"></script>
-    <!-- Tag Audio (Nuansa Sunda: Alunan Suling Merdu & Gemercik Air Alami) -->
-    <audio id="bgMusic" loop preload="none">
-        <source src="https://archive.org/download/suling-sunda/SULING%20SUNDA.mp3" type="audio/mpeg">
-        <source src="https://archive.org/download/degungsundanesemusicofwestjava/05%20-%20Ayun%20Ambing.mp3" type="audio/mpeg">
-    </audio>
-    <!-- Skrip Kustomisasi Gambar & Pemutar Musik Sunda -->
-    <script src="./assets/js/custom-images.js"></script>
-    <script src="./assets/js/music-player.js"></script>
+  <!-- Tag Audio (Nuansa Sunda: Alunan Suling Merdu & Gemercik Air Alami) -->
+  <audio id="bgMusic" loop preload="none">
+    <source src="https://archive.org/download/suling-sunda/SULING%20SUNDA.mp3" type="audio/mpeg">
+    <source src="https://archive.org/download/degungsundanesemusicofwestjava/05%20-%20Ayun%20Ambing.mp3" type="audio/mpeg">
+  </audio>
+  <script src="./assets/js/custom-images.js"></script>
+  <script src="./assets/js/music-player.js"></script>
 </body>
 </html>
-
